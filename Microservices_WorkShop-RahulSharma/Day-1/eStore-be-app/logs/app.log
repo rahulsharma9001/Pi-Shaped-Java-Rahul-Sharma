@@ -1,0 +1,293 @@
+2025-07-09T11:09:52.171+05:30  INFO 920488 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 920488 (/home/nashtech/Documents/Java-apps/Spring-Webflux/Spring-Webflux-main/target/classes started by nashtech in /home/nashtech/Documents/Java-apps/Spring-Webflux/Spring-Webflux-main)
+2025-07-09T11:09:52.187+05:30  INFO 920488 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-09T11:09:52.877+05:30  INFO 920488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-09T11:09:52.878+05:30  INFO 920488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-09T11:09:52.983+05:30  INFO 920488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 5 R2DBC repository interfaces.
+2025-07-09T11:09:53.307+05:30  INFO 920488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-09T11:09:53.308+05:30  INFO 920488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-09T11:09:53.317+05:30  INFO 920488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-07-09T11:09:53.997+05:30  INFO 920488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-09T11:09:54.011+05:30  INFO 920488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-09T11:09:54.012+05:30  INFO 920488 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-09T11:09:54.866+05:30 DEBUG 920488 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/ws/chat] in 'webSocketMapping'
+2025-07-09T11:09:54.928+05:30 DEBUG 920488 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-09T11:09:55.491+05:30 DEBUG 920488 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-07-09T11:09:55.495+05:30 DEBUG 920488 --- [main] o.s.w.r.f.s.s.RouterFunctionMapping      : 6 RouterFunction(s) in 'routerFunctionMapping'
+2025-07-09T11:09:55.558+05:30  INFO 920488 --- [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2025-07-09T11:09:55.665+05:30  INFO 920488 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-09T11:09:55.705+05:30 DEBUG 920488 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-07-09T11:09:55.760+05:30 DEBUG 920488 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-09T11:09:55.797+05:30  INFO 920488 --- [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-07-09T11:09:56.424+05:30  INFO 920488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http)
+2025-07-09T11:09:56.492+05:30  INFO 920488 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: ChatService, bean: chatServiceImpl, class: com.evolve.grpc.ChatServiceImpl
+2025-07-09T11:09:56.492+05:30  INFO 920488 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-07-09T11:09:56.492+05:30  INFO 920488 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-07-09T11:09:56.613+05:30  INFO 920488 --- [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-07-09T11:09:56.661+05:30  INFO 920488 --- [main] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port 7000
+2025-07-09T11:09:56.677+05:30  INFO 920488 --- [main] com.evolve.springbootapp.SpringBootApp   : Started SpringBootApp in 5.42 seconds (process running for 5.904)
+2025-07-09T11:10:15.281+05:30 DEBUG 920488 --- [http-nio-8080-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [464ccbeb] HTTP POST "/orders/user/1"
+2025-07-09T11:10:15.316+05:30 DEBUG 920488 --- [http-nio-8080-exec-1] o.s.w.r.f.s.s.RouterFunctionMapping      : [464ccbeb] Mapped to com.evolve.route.OrderRouter$$Lambda/0x0000706fd05056b8@28ea4253
+2025-07-09T11:10:15.337+05:30  WARN 920488 --- [http-nio-8080-exec-1] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-09T11:10:15.391+05:30 DEBUG 920488 --- [http-nio-8080-exec-1] org.springframework.web.HttpLogging      : [464ccbeb] Decoded [Order(id=null, status=UP, userId=null)]
+2025-07-09T11:10:15.459+05:30  INFO 920488 --- [http-nio-8080-exec-1] com.evolve.handler.OrderHandler          : Validating Order-User 1
+2025-07-09T11:10:15.468+05:30 DEBUG 920488 --- [http-nio-8080-exec-1] s.w.r.r.m.a.RequestMappingHandlerAdapter : [464ccbeb] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleAllExceptions(OrderException)
+2025-07-09T11:10:15.481+05:30 DEBUG 920488 --- [http-nio-8080-exec-1] .s.w.r.r.m.a.ResponseEntityResultHandler : [464ccbeb] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-09T11:10:15.482+05:30 DEBUG 920488 --- [http-nio-8080-exec-1] .s.w.r.r.m.a.ResponseEntityResultHandler : [464ccbeb] 0..1 [java.lang.String]
+2025-07-09T11:10:15.486+05:30 DEBUG 920488 --- [http-nio-8080-exec-1] org.springframework.web.HttpLogging      : [464ccbeb] Writing "Order Exception: Simulated checked exception"
+2025-07-09T11:10:15.509+05:30 DEBUG 920488 --- [http-nio-8080-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [464ccbeb] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-09T11:10:47.951+05:30 DEBUG 920488 --- [http-nio-8080-exec-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1f8bc8ea] HTTP POST "/users"
+2025-07-09T11:10:47.954+05:30 DEBUG 920488 --- [http-nio-8080-exec-2] o.s.w.r.f.s.s.RouterFunctionMapping      : [1f8bc8ea] Mapped to com.evolve.route.UserRouter$$Lambda/0x0000706fd04ea2c8@114c356b
+2025-07-09T11:10:47.957+05:30  WARN 920488 --- [http-nio-8080-exec-2] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-09T11:10:47.971+05:30 DEBUG 920488 --- [http-nio-8080-exec-2] org.springframework.web.HttpLogging      : [1f8bc8ea] Decoded [Usr(id=null, name=indra@example.com, email=Indrajeet)]
+2025-07-09T11:10:48.009+05:30 DEBUG 920488 --- [http-nio-8080-exec-2] org.springframework.web.HttpLogging      : [1f8bc8ea] Encoding [Usr(id=1, name=indra@example.com, email=Indrajeet)]
+2025-07-09T11:10:48.019+05:30 DEBUG 920488 --- [http-nio-8080-exec-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1f8bc8ea] Completed 200 OK
+2025-07-09T11:11:38.345+05:30 DEBUG 920488 --- [http-nio-8080-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [427236bf] HTTP GET "/ws/chat"
+2025-07-09T11:11:38.348+05:30 DEBUG 920488 --- [http-nio-8080-exec-3] o.s.w.r.handler.SimpleUrlHandlerMapping  : [427236bf] Mapped to com.evolve.websocket.ChatWebSocketHandler@71c9ceb8
+2025-07-09T11:11:38.386+05:30 DEBUG 920488 --- [http-nio-8080-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [427236bf] Completed 101 SWITCHING_PROTOCOLS
+2025-07-09T11:11:38.410+05:30 DEBUG 920488 --- [http-nio-8080-exec-3] o.s.w.r.s.a.TomcatWebSocketSession       : [427236bf] Session id "0" for http://localhost:8080/ws/chat
+2025-07-09T11:13:43.568+05:30 DEBUG 920488 --- [http-nio-8080-exec-7] o.s.w.s.adapter.HttpWebHandlerAdapter    : [44e44fd2] HTTP GET "/events"
+2025-07-09T11:13:43.576+05:30 DEBUG 920488 --- [http-nio-8080-exec-7] s.w.r.r.m.a.RequestMappingHandlerMapping : [44e44fd2] Mapped to com.evolve.controller.SseController#streamEvents()
+2025-07-09T11:13:43.588+05:30 DEBUG 920488 --- [http-nio-8080-exec-7] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [44e44fd2] Using 'text/event-stream' given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [text/event-stream]
+2025-07-09T11:13:43.589+05:30 DEBUG 920488 --- [http-nio-8080-exec-7] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [44e44fd2] 0..N [java.lang.String]
+2025-07-09T11:13:50.603+05:30 DEBUG 920488 --- [http-nio-8080-exec-8] org.springframework.web.HttpLogging      : [44e44fd2] AsyncEvent onError: java.io.IOException: Broken pipe
+2025-07-09T11:13:50.607+05:30 DEBUG 920488 --- [parallel-2] s.w.r.r.m.a.RequestMappingHandlerAdapter : [44e44fd2] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleAllExceptions(Exception)
+2025-07-09T11:15:06.810+05:30  INFO 920488 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Stopping redis server...
+2025-07-09T11:15:06.828+05:30  INFO 920488 --- [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2025-07-09T11:15:06.895+05:30  INFO 920488 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Redis exited
+2025-07-09T11:15:06.940+05:30  INFO 920488 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-09T11:15:06.952+05:30 ERROR 920488 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+reactor.core.Exceptions$ReactiveException: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:7000
+	at reactor.core.Exceptions.propagate(Exceptions.java:410) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:102) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.block(Mono.java:1779) ~[reactor-core-3.6.6.jar:3.6.6]
+	at com.evolve.springbootapp.RSocketClient.run(RSocketClient.java:14) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774) ~[spring-boot-3.3.0.jar:3.3.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.evolve.springbootapp.SpringBootApp.main(SpringBootApp.java:25) ~[classes/:na]
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104) ~[reactor-core-3.6.6.jar:3.6.6]
+		... 22 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:7000
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:166) ~[netty-transport-native-unix-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131) ~[netty-transport-native-unix-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:359) ~[netty-transport-native-unix-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:715) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:692) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:567) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:491) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:399) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994) ~[netty-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.110.Final.jar:4.1.110.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-07-09T11:15:06.958+05:30  WARN 920488 --- [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Failed to stop bean 'reactorResourceFactory'
+
+reactor.core.Exceptions$ReactiveException: java.lang.InterruptedException
+	at reactor.core.Exceptions.propagate(Exceptions.java:410) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:96) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.block(Mono.java:1779) ~[reactor-core-3.6.6.jar:3.6.6]
+	at org.springframework.http.client.ReactorResourceFactory.stop(ReactorResourceFactory.java:251) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:361) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:487) ~[spring-context-6.1.8.jar:6.1.8]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:317) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:218) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1139) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-3.3.0.jar:3.3.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-3.3.0.jar:3.3.0]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1100) ~[na:na]
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:230) ~[na:na]
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:91) ~[reactor-core-3.6.6.jar:3.6.6]
+	... 14 common frames omitted
+
+2025-07-09T11:15:16.820+05:30  INFO 931710 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 931710 (/home/nashtech/Documents/Java-apps/Spring-Webflux/Spring-Webflux-main/target/classes started by nashtech in /home/nashtech/Documents/Java-apps/Spring-Webflux/Spring-Webflux-main)
+2025-07-09T11:15:16.823+05:30  INFO 931710 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-09T11:15:17.488+05:30  INFO 931710 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-09T11:15:17.490+05:30  INFO 931710 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-09T11:15:17.631+05:30  INFO 931710 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 5 R2DBC repository interfaces.
+2025-07-09T11:15:18.077+05:30  INFO 931710 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-09T11:15:18.078+05:30  INFO 931710 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-09T11:15:18.086+05:30  INFO 931710 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2025-07-09T11:15:18.649+05:30  INFO 931710 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-09T11:15:18.662+05:30  INFO 931710 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-09T11:15:18.662+05:30  INFO 931710 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-09T11:15:19.385+05:30 DEBUG 931710 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/ws/chat] in 'webSocketMapping'
+2025-07-09T11:15:19.436+05:30 DEBUG 931710 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-09T11:15:19.923+05:30 DEBUG 931710 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-07-09T11:15:19.930+05:30 DEBUG 931710 --- [main] o.s.w.r.f.s.s.RouterFunctionMapping      : 6 RouterFunction(s) in 'routerFunctionMapping'
+2025-07-09T11:15:20.051+05:30  INFO 931710 --- [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2025-07-09T11:15:20.231+05:30  INFO 931710 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-09T11:15:20.277+05:30 DEBUG 931710 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-07-09T11:15:20.305+05:30 DEBUG 931710 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-09T11:15:20.341+05:30  INFO 931710 --- [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-07-09T11:15:20.922+05:30  INFO 931710 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http)
+2025-07-09T11:15:21.018+05:30  INFO 931710 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: ChatService, bean: chatServiceImpl, class: com.evolve.grpc.ChatServiceImpl
+2025-07-09T11:15:21.019+05:30  INFO 931710 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-07-09T11:15:21.019+05:30  INFO 931710 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-07-09T11:15:21.158+05:30  INFO 931710 --- [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-07-09T11:15:21.216+05:30  INFO 931710 --- [main] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port 7000
+2025-07-09T11:15:21.235+05:30  INFO 931710 --- [main] com.evolve.springbootapp.SpringBootApp   : Started SpringBootApp in 5.257 seconds (process running for 5.779)
+2025-07-09T11:41:11.648+05:30 DEBUG 931710 --- [http-nio-8080-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3b623e0] HTTP GET "/ws/chat"
+2025-07-09T11:41:11.666+05:30 DEBUG 931710 --- [http-nio-8080-exec-1] o.s.w.r.handler.SimpleUrlHandlerMapping  : [3b623e0] Mapped to com.evolve.websocket.ChatWebSocketHandler@38c342bc
+2025-07-09T11:41:11.683+05:30 DEBUG 931710 --- [http-nio-8080-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3b623e0] Completed 101 SWITCHING_PROTOCOLS
+2025-07-09T11:41:11.695+05:30 DEBUG 931710 --- [http-nio-8080-exec-1] o.s.w.r.s.a.TomcatWebSocketSession       : [3b623e0] Session id "0" for http://localhost:8080/ws/chat
+2025-07-09T11:44:29.554+05:30 DEBUG 931710 --- [http-nio-8080-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [10645fd4] HTTP GET "/login"
+2025-07-09T11:44:29.566+05:30 DEBUG 931710 --- [http-nio-8080-exec-3] o.s.w.r.f.s.s.RouterFunctionMapping      : [10645fd4] Mapped to com.evolve.route.SessionRouter$$Lambda/0x000070a4cc4f57d0@7dccfc14
+2025-07-09T11:44:29.589+05:30 DEBUG 931710 --- [parallel-6] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2025-07-09T11:44:29.614+05:30 DEBUG 931710 --- [parallel-6] org.springframework.web.HttpLogging      : [10645fd4] Writing "Logged in"
+2025-07-09T11:44:29.877+05:30 DEBUG 931710 --- [lettuce-epollEventLoop-4-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [10645fd4] Completed 200 OK
+2025-07-09T11:44:35.845+05:30 DEBUG 931710 --- [http-nio-8080-exec-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [192d7314] HTTP GET "/profile"
+2025-07-09T11:44:35.849+05:30 DEBUG 931710 --- [http-nio-8080-exec-5] o.s.w.r.f.s.s.RouterFunctionMapping      : [192d7314] Mapped to com.evolve.route.SessionRouter$$Lambda/0x000070a4cc4f59e8@17ea9e41
+2025-07-09T11:44:35.852+05:30 DEBUG 931710 --- [parallel-7] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2025-07-09T11:44:35.853+05:30 DEBUG 931710 --- [parallel-7] org.springframework.web.HttpLogging      : [192d7314] Writing "Not logged in"
+2025-07-09T11:44:35.856+05:30 DEBUG 931710 --- [parallel-7] o.s.w.s.adapter.HttpWebHandlerAdapter    : [192d7314] Completed 401 UNAUTHORIZED
+2025-07-09T11:45:34.734+05:30 DEBUG 931710 --- [http-nio-8080-exec-7] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5d9a4ffc] HTTP GET "/login"
+2025-07-09T11:45:34.738+05:30 DEBUG 931710 --- [http-nio-8080-exec-7] o.s.w.r.f.s.s.RouterFunctionMapping      : [5d9a4ffc] Mapped to com.evolve.route.SessionRouter$$Lambda/0x000070a4cc4f57d0@7dccfc14
+2025-07-09T11:45:34.741+05:30 DEBUG 931710 --- [parallel-9] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2025-07-09T11:45:34.743+05:30 DEBUG 931710 --- [parallel-9] org.springframework.web.HttpLogging      : [5d9a4ffc] Writing "Logged in"
+2025-07-09T11:45:34.752+05:30 DEBUG 931710 --- [lettuce-epollEventLoop-4-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5d9a4ffc] Completed 200 OK
+2025-07-09T11:45:34.845+05:30 DEBUG 931710 --- [http-nio-8080-exec-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [54a39765] HTTP GET "/favicon.ico"
+2025-07-09T11:45:34.855+05:30 DEBUG 931710 --- [http-nio-8080-exec-9] s.w.r.r.m.a.RequestMappingHandlerAdapter : [54a39765] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-09T11:45:34.866+05:30 DEBUG 931710 --- [http-nio-8080-exec-9] .s.w.r.r.m.a.ResponseEntityResultHandler : [54a39765] Using 'image/avif' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-09T11:45:34.867+05:30 DEBUG 931710 --- [http-nio-8080-exec-9] .s.w.r.r.m.a.ResponseEntityResultHandler : [54a39765] 0..1 [java.lang.String]
+2025-07-09T11:45:34.867+05:30 DEBUG 931710 --- [http-nio-8080-exec-9] org.springframework.web.HttpLogging      : [54a39765] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-09T11:45:34.870+05:30 DEBUG 931710 --- [http-nio-8080-exec-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [54a39765] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-09T11:45:39.492+05:30 DEBUG 931710 --- [http-nio-8080-exec-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [23266085] HTTP GET "/profile"
+2025-07-09T11:45:39.496+05:30 DEBUG 931710 --- [http-nio-8080-exec-10] o.s.w.r.f.s.s.RouterFunctionMapping      : [23266085] Mapped to com.evolve.route.SessionRouter$$Lambda/0x000070a4cc4f59e8@17ea9e41
+2025-07-09T11:45:39.527+05:30 DEBUG 931710 --- [lettuce-epollEventLoop-4-1] org.springframework.web.HttpLogging      : [23266085] Writing "Welcome, Indrajeet"
+2025-07-09T11:45:39.537+05:30 DEBUG 931710 --- [lettuce-epollEventLoop-4-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [23266085] Completed 200 OK
+2025-07-09T11:45:39.609+05:30 DEBUG 931710 --- [http-nio-8080-exec-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [49bde3d2] HTTP GET "/favicon.ico"
+2025-07-09T11:45:39.612+05:30 DEBUG 931710 --- [http-nio-8080-exec-2] s.w.r.r.m.a.RequestMappingHandlerAdapter : [49bde3d2] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-09T11:45:39.614+05:30 DEBUG 931710 --- [http-nio-8080-exec-2] .s.w.r.r.m.a.ResponseEntityResultHandler : [49bde3d2] Using 'image/avif' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-09T11:45:39.614+05:30 DEBUG 931710 --- [http-nio-8080-exec-2] .s.w.r.r.m.a.ResponseEntityResultHandler : [49bde3d2] 0..1 [java.lang.String]
+2025-07-09T11:45:39.614+05:30 DEBUG 931710 --- [http-nio-8080-exec-2] org.springframework.web.HttpLogging      : [49bde3d2] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-09T11:45:39.616+05:30 DEBUG 931710 --- [http-nio-8080-exec-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [49bde3d2] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-09T11:45:44.552+05:30 DEBUG 931710 --- [http-nio-8080-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [7d0a61e5] HTTP GET "/logout"
+2025-07-09T11:45:44.555+05:30 DEBUG 931710 --- [http-nio-8080-exec-3] s.w.r.r.m.a.RequestMappingHandlerAdapter : [7d0a61e5] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-09T11:45:44.557+05:30 DEBUG 931710 --- [http-nio-8080-exec-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [7d0a61e5] Using 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-09T11:45:44.557+05:30 DEBUG 931710 --- [http-nio-8080-exec-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [7d0a61e5] 0..1 [java.lang.String]
+2025-07-09T11:45:44.558+05:30 DEBUG 931710 --- [http-nio-8080-exec-3] org.springframework.web.HttpLogging      : [7d0a61e5] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-09T11:45:44.561+05:30 DEBUG 931710 --- [http-nio-8080-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [7d0a61e5] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-09T11:45:44.616+05:30 DEBUG 931710 --- [http-nio-8080-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4471efbc] HTTP GET "/favicon.ico"
+2025-07-09T11:45:44.621+05:30 DEBUG 931710 --- [http-nio-8080-exec-4] s.w.r.r.m.a.RequestMappingHandlerAdapter : [4471efbc] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-09T11:45:44.623+05:30 DEBUG 931710 --- [http-nio-8080-exec-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [4471efbc] Using 'image/avif' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-09T11:45:44.624+05:30 DEBUG 931710 --- [http-nio-8080-exec-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [4471efbc] 0..1 [java.lang.String]
+2025-07-09T11:45:44.625+05:30 DEBUG 931710 --- [http-nio-8080-exec-4] org.springframework.web.HttpLogging      : [4471efbc] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-09T11:45:44.627+05:30 DEBUG 931710 --- [http-nio-8080-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4471efbc] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-09T11:46:19.434+05:30 DEBUG 931710 --- [http-nio-8080-exec-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [56d7947a] HTTP GET "/login"
+2025-07-09T11:46:19.437+05:30 DEBUG 931710 --- [http-nio-8080-exec-5] o.s.w.r.f.s.s.RouterFunctionMapping      : [56d7947a] Mapped to com.evolve.route.SessionRouter$$Lambda/0x000070a4cc4f57d0@7dccfc14
+2025-07-09T11:46:19.438+05:30 DEBUG 931710 --- [parallel-10] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2025-07-09T11:46:19.440+05:30 DEBUG 931710 --- [parallel-10] org.springframework.web.HttpLogging      : [56d7947a] Writing "Logged in"
+2025-07-09T11:46:19.446+05:30 DEBUG 931710 --- [lettuce-epollEventLoop-4-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [56d7947a] Completed 200 OK
+2025-07-09T11:46:24.164+05:30 DEBUG 931710 --- [http-nio-8080-exec-7] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5762248c] HTTP GET "/profile"
+2025-07-09T11:46:24.166+05:30 DEBUG 931710 --- [http-nio-8080-exec-7] o.s.w.r.f.s.s.RouterFunctionMapping      : [5762248c] Mapped to com.evolve.route.SessionRouter$$Lambda/0x000070a4cc4f59e8@17ea9e41
+2025-07-09T11:46:24.169+05:30 DEBUG 931710 --- [parallel-11] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2025-07-09T11:46:24.170+05:30 DEBUG 931710 --- [parallel-11] org.springframework.web.HttpLogging      : [5762248c] Writing "Not logged in"
+2025-07-09T11:46:24.173+05:30 DEBUG 931710 --- [parallel-11] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5762248c] Completed 401 UNAUTHORIZED
+2025-07-09T11:46:29.299+05:30 DEBUG 931710 --- [http-nio-8080-exec-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6e5873f1] HTTP GET "/logout"
+2025-07-09T11:46:29.301+05:30 DEBUG 931710 --- [http-nio-8080-exec-9] s.w.r.r.m.a.RequestMappingHandlerAdapter : [6e5873f1] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-09T11:46:29.302+05:30 DEBUG 931710 --- [http-nio-8080-exec-9] .s.w.r.r.m.a.ResponseEntityResultHandler : [6e5873f1] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-09T11:46:29.303+05:30 DEBUG 931710 --- [http-nio-8080-exec-9] .s.w.r.r.m.a.ResponseEntityResultHandler : [6e5873f1] 0..1 [java.lang.String]
+2025-07-09T11:46:29.303+05:30 DEBUG 931710 --- [http-nio-8080-exec-9] org.springframework.web.HttpLogging      : [6e5873f1] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-09T11:46:29.304+05:30 DEBUG 931710 --- [http-nio-8080-exec-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6e5873f1] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-09T11:50:13.060+05:30 DEBUG 931710 --- [http-nio-8080-exec-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [120ea85] HTTP GET "/login"
+2025-07-09T11:50:13.062+05:30 DEBUG 931710 --- [http-nio-8080-exec-10] o.s.w.r.f.s.s.RouterFunctionMapping      : [120ea85] Mapped to com.evolve.route.SessionRouter$$Lambda/0x000070a4cc4f57d0@7dccfc14
+2025-07-09T11:50:13.064+05:30 DEBUG 931710 --- [parallel-12] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2025-07-09T11:50:13.065+05:30 DEBUG 931710 --- [parallel-12] org.springframework.web.HttpLogging      : [120ea85] Writing "Logged in"
+2025-07-09T11:50:13.072+05:30 DEBUG 931710 --- [lettuce-epollEventLoop-4-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [120ea85] Completed 200 OK
+2025-07-09T11:50:20.187+05:30 DEBUG 931710 --- [http-nio-8080-exec-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5b8cd1f7] HTTP GET "/profile"
+2025-07-09T11:50:20.189+05:30 DEBUG 931710 --- [http-nio-8080-exec-2] o.s.w.r.f.s.s.RouterFunctionMapping      : [5b8cd1f7] Mapped to com.evolve.route.SessionRouter$$Lambda/0x000070a4cc4f59e8@17ea9e41
+2025-07-09T11:50:20.191+05:30 DEBUG 931710 --- [parallel-13] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2025-07-09T11:50:20.192+05:30 DEBUG 931710 --- [parallel-13] org.springframework.web.HttpLogging      : [5b8cd1f7] Writing "Not logged in"
+2025-07-09T11:50:20.194+05:30 DEBUG 931710 --- [parallel-13] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5b8cd1f7] Completed 401 UNAUTHORIZED
+2025-07-09T11:50:28.668+05:30 DEBUG 931710 --- [http-nio-8080-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [404e73ea] HTTP GET "/logout"
+2025-07-09T11:50:28.671+05:30 DEBUG 931710 --- [http-nio-8080-exec-4] s.w.r.r.m.a.RequestMappingHandlerAdapter : [404e73ea] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-09T11:50:28.672+05:30 DEBUG 931710 --- [http-nio-8080-exec-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [404e73ea] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-09T11:50:28.672+05:30 DEBUG 931710 --- [http-nio-8080-exec-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [404e73ea] 0..1 [java.lang.String]
+2025-07-09T11:50:28.673+05:30 DEBUG 931710 --- [http-nio-8080-exec-4] org.springframework.web.HttpLogging      : [404e73ea] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-09T11:50:28.674+05:30 DEBUG 931710 --- [http-nio-8080-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [404e73ea] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-09T12:00:41.371+05:30  INFO 931710 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Stopping redis server...
+2025-07-09T12:00:41.388+05:30  INFO 931710 --- [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2025-07-09T12:00:41.447+05:30  INFO 931710 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Redis exited
+2025-07-09T12:00:41.537+05:30  INFO 931710 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/127.0.0.1:6379
+2025-07-09T12:00:41.550+05:30  WARN 931710 --- [lettuce-epollEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:6379
+2025-07-09T12:40:59.480+05:30  INFO 1101037 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 1101037 (/home/nashtech/Documents/Java-apps/Spring-Webflux/Spring-Webflux-main/target/classes started by nashtech in /home/nashtech/Documents/Java-apps/Spring-Webflux/Spring-Webflux-main)
+2025-07-09T12:40:59.481+05:30  INFO 1101037 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-09T12:41:00.444+05:30  INFO 1101037 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-09T12:41:00.446+05:30  INFO 1101037 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-09T12:41:00.673+05:30  INFO 1101037 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 218 ms. Found 5 R2DBC repository interfaces.
+2025-07-09T12:41:01.191+05:30  INFO 1101037 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-09T12:41:01.192+05:30  INFO 1101037 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-09T12:41:01.213+05:30  INFO 1101037 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-07-09T12:41:01.972+05:30  INFO 1101037 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-09T12:41:01.986+05:30  INFO 1101037 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-09T12:41:01.986+05:30  INFO 1101037 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-09T12:41:02.795+05:30 DEBUG 1101037 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/ws/chat] in 'webSocketMapping'
+2025-07-09T12:41:02.852+05:30 DEBUG 1101037 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-09T12:41:03.385+05:30 DEBUG 1101037 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-07-09T12:41:03.393+05:30 DEBUG 1101037 --- [main] o.s.w.r.f.s.s.RouterFunctionMapping      : 6 RouterFunction(s) in 'routerFunctionMapping'
+2025-07-09T12:41:03.467+05:30  INFO 1101037 --- [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2025-07-09T12:41:03.611+05:30  INFO 1101037 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-09T12:41:03.703+05:30 DEBUG 1101037 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-07-09T12:41:03.751+05:30 DEBUG 1101037 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-09T12:41:03.807+05:30  INFO 1101037 --- [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-07-09T12:41:04.499+05:30  INFO 1101037 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http)
+2025-07-09T12:41:04.608+05:30  INFO 1101037 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: ChatService, bean: chatServiceImpl, class: com.evolve.grpc.ChatServiceImpl
+2025-07-09T12:41:04.608+05:30  INFO 1101037 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-07-09T12:41:04.608+05:30  INFO 1101037 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-07-09T12:41:04.733+05:30  INFO 1101037 --- [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-07-09T12:41:04.828+05:30  INFO 1101037 --- [main] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port 7000
+2025-07-09T12:41:04.871+05:30  INFO 1101037 --- [main] com.evolve.springbootapp.SpringBootApp   : Started SpringBootApp in 6.28 seconds (process running for 6.762)
+2025-07-09T12:41:29.578+05:30 DEBUG 1101037 --- [http-nio-8080-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [55e62c90] HTTP GET "/events"
+2025-07-09T12:41:29.601+05:30 DEBUG 1101037 --- [http-nio-8080-exec-1] s.w.r.r.m.a.RequestMappingHandlerMapping : [55e62c90] Mapped to com.evolve.controller.SseController#streamEvents()
+2025-07-09T12:41:29.612+05:30 DEBUG 1101037 --- [http-nio-8080-exec-1] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [55e62c90] Using 'text/event-stream' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/event-stream]
+2025-07-09T12:41:29.613+05:30 DEBUG 1101037 --- [http-nio-8080-exec-1] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [55e62c90] 0..N [java.lang.String]
+2025-07-09T12:43:52.622+05:30 DEBUG 1101037 --- [http-nio-8080-exec-3] org.springframework.web.HttpLogging      : [55e62c90] AsyncEvent onError: java.io.IOException: Broken pipe
+2025-07-09T12:43:52.628+05:30 DEBUG 1101037 --- [parallel-6] s.w.r.r.m.a.RequestMappingHandlerAdapter : [55e62c90] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleAllExceptions(Exception)
+2025-07-09T12:49:29.434+05:30 DEBUG 1101037 --- [http-nio-8080-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [dcda2] HTTP GET "/.well-known/appspecific/com.chrome.devtools.json"
+2025-07-09T12:49:29.440+05:30 DEBUG 1101037 --- [http-nio-8080-exec-4] s.w.r.r.m.a.RequestMappingHandlerAdapter : [dcda2] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-09T12:49:29.448+05:30 DEBUG 1101037 --- [http-nio-8080-exec-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [dcda2] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-09T12:49:29.449+05:30 DEBUG 1101037 --- [http-nio-8080-exec-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [dcda2] 0..1 [java.lang.String]
+2025-07-09T12:49:29.458+05:30 DEBUG 1101037 --- [http-nio-8080-exec-4] org.springframework.web.HttpLogging      : [dcda2] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-09T12:49:29.470+05:30 DEBUG 1101037 --- [http-nio-8080-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [dcda2] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-09T12:49:48.559+05:30 DEBUG 1101037 --- [http-nio-8080-exec-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3ec0adb] HTTP GET "/ws/chat"
+2025-07-09T12:49:48.562+05:30 DEBUG 1101037 --- [http-nio-8080-exec-5] o.s.w.r.handler.SimpleUrlHandlerMapping  : [3ec0adb] Mapped to com.evolve.websocket.ChatWebSocketHandler@4c16eeed
+2025-07-09T12:49:48.620+05:30 DEBUG 1101037 --- [http-nio-8080-exec-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3ec0adb] Completed 101 SWITCHING_PROTOCOLS
+2025-07-09T12:49:48.648+05:30 DEBUG 1101037 --- [http-nio-8080-exec-5] o.s.w.r.s.a.TomcatWebSocketSession       : [3ec0adb] Session id "0" for http://localhost:8080/ws/chat
+2025-07-09T13:11:50.925+05:30 DEBUG 1101037 --- [http-nio-8080-exec-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [699e1023] HTTP POST "/orders/user/1"
+2025-07-09T13:11:50.929+05:30 DEBUG 1101037 --- [http-nio-8080-exec-10] o.s.w.r.f.s.s.RouterFunctionMapping      : [699e1023] Mapped to com.evolve.route.OrderRouter$$Lambda/0x00007d78f84fbb88@1708dcc3
+2025-07-09T13:11:50.974+05:30  WARN 1101037 --- [single-1] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-09T13:11:51.036+05:30 DEBUG 1101037 --- [single-1] org.springframework.web.HttpLogging      : [699e1023] Decoded [Order(id=null, status=UP, userId=null)]
+2025-07-09T13:11:51.088+05:30  INFO 1101037 --- [single-1] com.evolve.handler.OrderHandler          : Validating Order-User 1
+2025-07-09T13:11:51.093+05:30 DEBUG 1101037 --- [single-1] s.w.r.r.m.a.RequestMappingHandlerAdapter : [699e1023] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleAllExceptions(OrderException)
+2025-07-09T13:11:51.094+05:30 DEBUG 1101037 --- [single-1] .s.w.r.r.m.a.ResponseEntityResultHandler : [699e1023] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-09T13:11:51.094+05:30 DEBUG 1101037 --- [single-1] .s.w.r.r.m.a.ResponseEntityResultHandler : [699e1023] 0..1 [java.lang.String]
+2025-07-09T13:11:51.094+05:30 DEBUG 1101037 --- [single-1] org.springframework.web.HttpLogging      : [699e1023] Writing "Order Exception: Simulated checked exception"
+2025-07-09T13:11:51.095+05:30 DEBUG 1101037 --- [single-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [699e1023] Completed 500 INTERNAL_SERVER_ERROR
