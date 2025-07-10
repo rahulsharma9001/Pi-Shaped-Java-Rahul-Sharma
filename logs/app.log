@@ -1,0 +1,1227 @@
+2025-07-10T16:21:35.475+05:30  INFO 83938 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 83938 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T16:21:35.480+05:30  INFO 83938 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T16:21:36.610+05:30  INFO 83938 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T16:21:36.611+05:30  INFO 83938 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T16:21:36.800+05:30  INFO 83938 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 182 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T16:21:37.474+05:30  INFO 83938 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T16:21:37.476+05:30  INFO 83938 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T16:21:37.494+05:30  INFO 83938 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-07-10T16:21:38.478+05:30  INFO 83938 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T16:21:38.499+05:30  INFO 83938 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T16:21:38.499+05:30  INFO 83938 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-10T16:21:39.673+05:30 DEBUG 83938 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/ws/chat] in 'webSocketMapping'
+2025-07-10T16:21:39.759+05:30 DEBUG 83938 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T16:21:40.585+05:30 DEBUG 83938 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-07-10T16:21:40.592+05:30 DEBUG 83938 --- [main] o.s.w.r.f.s.s.RouterFunctionMapping      : 6 RouterFunction(s) in 'routerFunctionMapping'
+2025-07-10T16:21:40.718+05:30  INFO 83938 --- [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2025-07-10T16:21:40.963+05:30  INFO 83938 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-10T16:21:41.057+05:30 DEBUG 83938 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-07-10T16:21:41.111+05:30 DEBUG 83938 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T16:21:41.188+05:30  INFO 83938 --- [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-07-10T16:21:42.551+05:30  INFO 83938 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http)
+2025-07-10T16:21:42.716+05:30  INFO 83938 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: ChatService, bean: chatServiceImpl, class: com.evolve.grpc.ChatServiceImpl
+2025-07-10T16:21:42.717+05:30  INFO 83938 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-07-10T16:21:42.717+05:30  INFO 83938 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-07-10T16:21:42.912+05:30  INFO 83938 --- [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-07-10T16:21:42.994+05:30  INFO 83938 --- [main] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port 7000
+2025-07-10T16:21:43.018+05:30  INFO 83938 --- [main] com.evolve.springbootapp.SpringBootApp   : Started SpringBootApp in 8.655 seconds (process running for 9.554)
+2025-07-10T16:27:09.057+05:30  INFO 83938 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Stopping redis server...
+2025-07-10T16:27:09.072+05:30  INFO 83938 --- [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2025-07-10T16:27:09.145+05:30  INFO 83938 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Redis exited
+2025-07-10T16:27:09.255+05:30  INFO 83938 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-10T16:27:09.287+05:30 ERROR 83938 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+reactor.core.Exceptions$ReactiveException: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:7000
+	at reactor.core.Exceptions.propagate(Exceptions.java:410) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:102) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.block(Mono.java:1779) ~[reactor-core-3.6.6.jar:3.6.6]
+	at com.evolve.springbootapp.RSocketClient.run(RSocketClient.java:14) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774) ~[spring-boot-3.3.0.jar:3.3.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.evolve.springbootapp.SpringBootApp.main(SpringBootApp.java:25) ~[classes/:na]
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104) ~[reactor-core-3.6.6.jar:3.6.6]
+		... 22 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:7000
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:166) ~[netty-transport-native-unix-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131) ~[netty-transport-native-unix-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:359) ~[netty-transport-native-unix-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:715) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:692) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:567) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:491) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:399) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994) ~[netty-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.110.Final.jar:4.1.110.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-07-10T16:27:09.300+05:30  WARN 83938 --- [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Failed to stop bean 'reactorResourceFactory'
+
+reactor.core.Exceptions$ReactiveException: java.lang.InterruptedException
+	at reactor.core.Exceptions.propagate(Exceptions.java:410) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:96) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.block(Mono.java:1779) ~[reactor-core-3.6.6.jar:3.6.6]
+	at org.springframework.http.client.ReactorResourceFactory.stop(ReactorResourceFactory.java:251) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:361) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:487) ~[spring-context-6.1.8.jar:6.1.8]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:317) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:218) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1139) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-3.3.0.jar:3.3.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-3.3.0.jar:3.3.0]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1100) ~[na:na]
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:230) ~[na:na]
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:91) ~[reactor-core-3.6.6.jar:3.6.6]
+	... 14 common frames omitted
+
+2025-07-10T16:27:18.193+05:30  INFO 85804 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 85804 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T16:27:18.200+05:30  INFO 85804 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T16:27:19.618+05:30  INFO 85804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T16:27:19.620+05:30  INFO 85804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T16:27:19.928+05:30  INFO 85804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 295 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T16:27:20.646+05:30  INFO 85804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T16:27:20.649+05:30  INFO 85804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T16:27:20.671+05:30  INFO 85804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-10T16:27:21.683+05:30  INFO 85804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T16:27:21.708+05:30  INFO 85804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T16:27:21.709+05:30  INFO 85804 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-10T16:27:21.974+05:30  WARN 85804 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed
+2025-07-10T16:27:22.010+05:30  INFO 85804 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-10T16:27:22.041+05:30 ERROR 85804 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1780) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.evolve.springbootapp.SpringBootApp.main(SpringBootApp.java:25) ~[classes/:na]
+Caused by: java.lang.RuntimeException: Can't start redis server. Check logs for details. Redis process log: 
+[85912] 10 Jul 16:27:21.971 # Creating Server TCP listening socket 127.0.0.1:6370: bind: Address already in use
+	at redis.embedded.AbstractRedisInstance.awaitRedisServerReady(AbstractRedisInstance.java:70) ~[embedded-redis-0.7.3.jar:na]
+	at redis.embedded.AbstractRedisInstance.start(AbstractRedisInstance.java:42) ~[embedded-redis-0.7.3.jar:na]
+	at redis.embedded.RedisServer.start(RedisServer.java:9) ~[embedded-redis-0.7.3.jar:na]
+	at com.evolve.config.EmbeddedRedisConfig.startRedis(EmbeddedRedisConfig.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 18 common frames omitted
+
+2025-07-10T16:28:49.969+05:30  INFO 86093 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 86093 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T16:28:49.974+05:30  INFO 86093 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T16:28:51.312+05:30  INFO 86093 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T16:28:51.313+05:30  INFO 86093 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T16:28:51.566+05:30  INFO 86093 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 244 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T16:28:52.449+05:30  INFO 86093 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T16:28:52.451+05:30  INFO 86093 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T16:28:52.469+05:30  INFO 86093 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-10T16:28:53.382+05:30  INFO 86093 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T16:28:53.630+05:30  WARN 86093 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed
+2025-07-10T16:28:56.525+05:30  INFO 86227 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 86227 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T16:28:56.530+05:30  INFO 86227 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T16:28:57.758+05:30  INFO 86227 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T16:28:57.759+05:30  INFO 86227 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T16:28:57.904+05:30  INFO 86227 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T16:28:58.623+05:30  INFO 86227 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T16:28:58.625+05:30  INFO 86227 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T16:28:58.643+05:30  INFO 86227 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-07-10T16:28:59.694+05:30  INFO 86227 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T16:28:59.718+05:30  INFO 86227 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T16:28:59.719+05:30  INFO 86227 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-10T16:28:59.956+05:30  WARN 86227 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed
+2025-07-10T16:28:59.982+05:30  INFO 86227 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-10T16:29:00.007+05:30 ERROR 86227 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1780) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.evolve.springbootapp.SpringBootApp.main(SpringBootApp.java:25) ~[classes/:na]
+Caused by: java.lang.RuntimeException: Can't start redis server. Check logs for details. Redis process log: 
+[86332] 10 Jul 16:28:59.953 # Creating Server TCP listening socket 127.0.0.1:6370: bind: Address already in use
+	at redis.embedded.AbstractRedisInstance.awaitRedisServerReady(AbstractRedisInstance.java:70) ~[embedded-redis-0.7.3.jar:na]
+	at redis.embedded.AbstractRedisInstance.start(AbstractRedisInstance.java:42) ~[embedded-redis-0.7.3.jar:na]
+	at redis.embedded.RedisServer.start(RedisServer.java:9) ~[embedded-redis-0.7.3.jar:na]
+	at com.evolve.config.EmbeddedRedisConfig.startRedis(EmbeddedRedisConfig.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 18 common frames omitted
+
+2025-07-10T16:29:19.772+05:30  INFO 86408 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 86408 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T16:29:19.777+05:30  INFO 86408 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T16:29:21.037+05:30  INFO 86408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T16:29:21.039+05:30  INFO 86408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T16:29:21.197+05:30  INFO 86408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T16:29:21.861+05:30  INFO 86408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T16:29:21.865+05:30  INFO 86408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T16:29:21.884+05:30  INFO 86408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-10T16:29:22.801+05:30  INFO 86408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-10T16:29:22.826+05:30  INFO 86408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T16:29:22.827+05:30  INFO 86408 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-10T16:29:23.904+05:30 DEBUG 86408 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/ws/chat] in 'webSocketMapping'
+2025-07-10T16:29:24.006+05:30 DEBUG 86408 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T16:29:24.837+05:30 DEBUG 86408 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-07-10T16:29:24.846+05:30 DEBUG 86408 --- [main] o.s.w.r.f.s.s.RouterFunctionMapping      : 6 RouterFunction(s) in 'routerFunctionMapping'
+2025-07-10T16:29:24.973+05:30  INFO 86408 --- [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2025-07-10T16:29:25.183+05:30  INFO 86408 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-10T16:29:25.260+05:30 DEBUG 86408 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-07-10T16:29:25.312+05:30 DEBUG 86408 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T16:29:25.380+05:30  INFO 86408 --- [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-07-10T16:29:26.400+05:30  INFO 86408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http)
+2025-07-10T16:29:26.560+05:30  INFO 86408 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: ChatService, bean: chatServiceImpl, class: com.evolve.grpc.ChatServiceImpl
+2025-07-10T16:29:26.561+05:30  INFO 86408 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-07-10T16:29:26.561+05:30  INFO 86408 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-07-10T16:29:26.731+05:30  INFO 86408 --- [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-07-10T16:29:26.795+05:30  INFO 86408 --- [main] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port 7000
+2025-07-10T16:29:26.820+05:30  INFO 86408 --- [main] com.evolve.springbootapp.SpringBootApp   : Started SpringBootApp in 8.117 seconds (process running for 8.86)
+2025-07-10T16:36:19.711+05:30  INFO 86408 --- [http-nio-8080-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf70x010x000x000xf30x030x030x0f0x9e0xd8Y0xb00xd30xfb}Y0x9d0xcf-0xc60x19H0xcb4e20x950xe3JY0xed:0xcef0xca0x95,0x990x0e ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-07-10T16:36:53.427+05:30  INFO 86408 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Stopping redis server...
+2025-07-10T16:36:53.442+05:30  INFO 86408 --- [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2025-07-10T16:36:53.443+05:30  INFO 86408 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Redis exited
+2025-07-10T16:37:01.642+05:30  INFO 89707 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 89707 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T16:37:01.649+05:30  INFO 89707 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T16:37:02.925+05:30  INFO 89707 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T16:37:02.926+05:30  INFO 89707 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T16:37:03.088+05:30  INFO 89707 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T16:37:03.732+05:30  INFO 89707 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T16:37:03.734+05:30  INFO 89707 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T16:37:03.751+05:30  INFO 89707 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-07-10T16:37:04.703+05:30  INFO 89707 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8000 (http)
+2025-07-10T16:37:04.746+05:30  INFO 89707 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T16:37:04.746+05:30  INFO 89707 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-10T16:37:05.855+05:30 DEBUG 89707 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/ws/chat] in 'webSocketMapping'
+2025-07-10T16:37:05.963+05:30 DEBUG 89707 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T16:37:06.917+05:30 DEBUG 89707 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-07-10T16:37:06.927+05:30 DEBUG 89707 --- [main] o.s.w.r.f.s.s.RouterFunctionMapping      : 6 RouterFunction(s) in 'routerFunctionMapping'
+2025-07-10T16:37:07.075+05:30  INFO 89707 --- [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2025-07-10T16:37:07.316+05:30  INFO 89707 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-10T16:37:07.422+05:30 DEBUG 89707 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-07-10T16:37:07.485+05:30 DEBUG 89707 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T16:37:07.592+05:30  INFO 89707 --- [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-07-10T16:37:08.648+05:30  INFO 89707 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8000 (http)
+2025-07-10T16:37:08.838+05:30  INFO 89707 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: ChatService, bean: chatServiceImpl, class: com.evolve.grpc.ChatServiceImpl
+2025-07-10T16:37:08.839+05:30  INFO 89707 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-07-10T16:37:08.839+05:30  INFO 89707 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-07-10T16:37:09.036+05:30  INFO 89707 --- [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-07-10T16:37:09.123+05:30  INFO 89707 --- [main] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port 7000
+2025-07-10T16:37:09.149+05:30  INFO 89707 --- [main] com.evolve.springbootapp.SpringBootApp   : Started SpringBootApp in 8.908 seconds (process running for 9.775)
+2025-07-10T16:37:30.949+05:30  INFO 89707 --- [http-nio-8000-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf70x010x000x000xf30x030x030xaf0xe20x120xad0xa40xd70x090xd30x910xb20xd6e0xf00xb3F_0xb90xdd0xc00x941b0xb1~W0x1fn)0xc3.0xee& ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-07-10T16:39:25.975+05:30 DEBUG 89707 --- [http-nio-8000-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [739470bc] HTTP GET "/users"
+2025-07-10T16:39:26.015+05:30 DEBUG 89707 --- [http-nio-8000-exec-4] o.s.w.r.f.s.s.RouterFunctionMapping      : [739470bc] Mapped to com.evolve.route.UserRouter$$Lambda/0x00007577a850ab90@5fd3150b
+2025-07-10T16:39:26.179+05:30 DEBUG 89707 --- [http-nio-8000-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [739470bc] Completed 200 OK
+2025-07-10T16:39:50.157+05:30 DEBUG 89707 --- [http-nio-8000-exec-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [34c53ea8] HTTP POST "/users"
+2025-07-10T16:39:50.159+05:30 DEBUG 89707 --- [http-nio-8000-exec-5] o.s.w.r.f.s.s.RouterFunctionMapping      : [34c53ea8] Mapped to com.evolve.route.UserRouter$$Lambda/0x00007577a850bd70@3a02d640
+2025-07-10T16:39:50.189+05:30  WARN 89707 --- [http-nio-8000-exec-5] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-10T16:39:50.237+05:30 DEBUG 89707 --- [http-nio-8000-exec-5] org.springframework.web.HttpLogging      : [34c53ea8] Decoded [Usr(id=null, name=john.doe@example.com, email=John Doe)]
+2025-07-10T16:39:50.329+05:30 DEBUG 89707 --- [http-nio-8000-exec-5] org.springframework.web.HttpLogging      : [34c53ea8] Encoding [Usr(id=1, name=john.doe@example.com, email=John Doe)]
+2025-07-10T16:39:50.337+05:30 DEBUG 89707 --- [http-nio-8000-exec-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [34c53ea8] Completed 200 OK
+2025-07-10T16:46:57.324+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] o.s.w.s.adapter.HttpWebHandlerAdapter    : [38afbd26] HTTP POST "/carts"
+2025-07-10T16:46:57.336+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] s.w.r.r.m.a.RequestMappingHandlerAdapter : [38afbd26] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T16:46:57.346+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] .s.w.r.r.m.a.ResponseEntityResultHandler : [38afbd26] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T16:46:57.347+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] .s.w.r.r.m.a.ResponseEntityResultHandler : [38afbd26] 0..1 [java.lang.String]
+2025-07-10T16:46:57.349+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] org.springframework.web.HttpLogging      : [38afbd26] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-10T16:46:57.357+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] o.s.w.s.adapter.HttpWebHandlerAdapter    : [38afbd26] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T16:51:08.926+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [306531a9] HTTP POST "/cart/stream"
+2025-07-10T16:51:08.930+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] s.w.r.r.m.a.RequestMappingHandlerAdapter : [306531a9] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T16:51:08.932+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] .s.w.r.r.m.a.ResponseEntityResultHandler : [306531a9] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T16:51:08.933+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] .s.w.r.r.m.a.ResponseEntityResultHandler : [306531a9] 0..1 [java.lang.String]
+2025-07-10T16:51:08.933+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] org.springframework.web.HttpLogging      : [306531a9] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-10T16:51:08.935+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [306531a9] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T16:51:32.096+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [57c3d82c] HTTP POST "/carts/user/1"
+2025-07-10T16:51:32.099+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] o.s.w.r.f.s.s.RouterFunctionMapping      : [57c3d82c] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007577a8516458@277f97f6
+2025-07-10T16:51:32.159+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [57c3d82c] Decoded [Cart(id=1, userId=1, status=ACTIVE)]
+2025-07-10T16:51:32.190+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] s.w.r.r.m.a.RequestMappingHandlerAdapter : [57c3d82c] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T16:51:32.192+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] .s.w.r.r.m.a.ResponseEntityResultHandler : [57c3d82c] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T16:51:32.192+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] .s.w.r.r.m.a.ResponseEntityResultHandler : [57c3d82c] 0..1 [java.lang.String]
+2025-07-10T16:51:32.192+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [57c3d82c] Writing "Handled RuntimeException-> Failed to update table [carts]; Row with Id [1] does not exist"
+2025-07-10T16:51:32.194+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [57c3d82c] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T16:52:00.234+05:30 DEBUG 89707 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3e37800c] HTTP POST "/carts/user/1"
+2025-07-10T16:52:00.237+05:30 DEBUG 89707 --- [http-nio-8000-exec-3] o.s.w.r.f.s.s.RouterFunctionMapping      : [3e37800c] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007577a8516458@277f97f6
+2025-07-10T16:52:00.238+05:30 DEBUG 89707 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [3e37800c] Decoded [Cart(id=12, userId=1, status=ACTIVE)]
+2025-07-10T16:52:00.243+05:30 DEBUG 89707 --- [http-nio-8000-exec-3] s.w.r.r.m.a.RequestMappingHandlerAdapter : [3e37800c] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T16:52:00.244+05:30 DEBUG 89707 --- [http-nio-8000-exec-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [3e37800c] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T16:52:00.244+05:30 DEBUG 89707 --- [http-nio-8000-exec-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [3e37800c] 0..1 [java.lang.String]
+2025-07-10T16:52:00.245+05:30 DEBUG 89707 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [3e37800c] Writing "Handled RuntimeException-> Failed to update table [carts]; Row with Id [12] does not exist"
+2025-07-10T16:52:00.247+05:30 DEBUG 89707 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3e37800c] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T16:52:28.496+05:30 DEBUG 89707 --- [http-nio-8000-exec-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4faf5be3] HTTP POST "/carts"
+2025-07-10T16:52:28.498+05:30 DEBUG 89707 --- [http-nio-8000-exec-6] s.w.r.r.m.a.RequestMappingHandlerAdapter : [4faf5be3] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T16:52:28.499+05:30 DEBUG 89707 --- [http-nio-8000-exec-6] .s.w.r.r.m.a.ResponseEntityResultHandler : [4faf5be3] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T16:52:28.499+05:30 DEBUG 89707 --- [http-nio-8000-exec-6] .s.w.r.r.m.a.ResponseEntityResultHandler : [4faf5be3] 0..1 [java.lang.String]
+2025-07-10T16:52:28.499+05:30 DEBUG 89707 --- [http-nio-8000-exec-6] org.springframework.web.HttpLogging      : [4faf5be3] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-10T16:52:28.501+05:30 DEBUG 89707 --- [http-nio-8000-exec-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4faf5be3] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T16:54:14.278+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] o.s.w.s.adapter.HttpWebHandlerAdapter    : [53fb5582] HTTP POST "/carts/user/1"
+2025-07-10T16:54:14.280+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] o.s.w.r.f.s.s.RouterFunctionMapping      : [53fb5582] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007577a8516458@277f97f6
+2025-07-10T16:54:14.282+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] org.springframework.web.HttpLogging      : [53fb5582] Decoded [Cart(id=12, userId=1, status=ACTIVE)]
+2025-07-10T16:54:14.287+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] s.w.r.r.m.a.RequestMappingHandlerAdapter : [53fb5582] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T16:54:14.288+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] .s.w.r.r.m.a.ResponseEntityResultHandler : [53fb5582] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T16:54:14.288+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] .s.w.r.r.m.a.ResponseEntityResultHandler : [53fb5582] 0..1 [java.lang.String]
+2025-07-10T16:54:14.289+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] org.springframework.web.HttpLogging      : [53fb5582] Writing "Handled RuntimeException-> Failed to update table [carts]; Row with Id [12] does not exist"
+2025-07-10T16:54:14.291+05:30 DEBUG 89707 --- [http-nio-8000-exec-8] o.s.w.s.adapter.HttpWebHandlerAdapter    : [53fb5582] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T16:55:03.780+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3ea2c9d5] HTTP POST "/carts/user/1"
+2025-07-10T16:55:03.782+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] o.s.w.r.f.s.s.RouterFunctionMapping      : [3ea2c9d5] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007577a8516458@277f97f6
+2025-07-10T16:55:03.783+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] org.springframework.web.HttpLogging      : [3ea2c9d5] Decoded [Cart(id=1, userId=1, status=ACTIVE)]
+2025-07-10T16:55:03.788+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] s.w.r.r.m.a.RequestMappingHandlerAdapter : [3ea2c9d5] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T16:55:03.788+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] .s.w.r.r.m.a.ResponseEntityResultHandler : [3ea2c9d5] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T16:55:03.789+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] .s.w.r.r.m.a.ResponseEntityResultHandler : [3ea2c9d5] 0..1 [java.lang.String]
+2025-07-10T16:55:03.789+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] org.springframework.web.HttpLogging      : [3ea2c9d5] Writing "Handled RuntimeException-> Failed to update table [carts]; Row with Id [1] does not exist"
+2025-07-10T16:55:03.791+05:30 DEBUG 89707 --- [http-nio-8000-exec-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3ea2c9d5] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T16:59:51.328+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [a6b7e42] HTTP POST "/carts/user/1"
+2025-07-10T16:59:51.329+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] o.s.w.r.f.s.s.RouterFunctionMapping      : [a6b7e42] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007577a8516458@277f97f6
+2025-07-10T16:59:51.331+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [a6b7e42] Decoded [Cart(id=null, userId=1, status=ACTIVE)]
+2025-07-10T16:59:51.337+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] s.w.r.r.m.a.RequestMappingHandlerAdapter : [a6b7e42] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T16:59:51.338+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] .s.w.r.r.m.a.ResponseEntityResultHandler : [a6b7e42] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T16:59:51.338+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] .s.w.r.r.m.a.ResponseEntityResultHandler : [a6b7e42] 0..1 [java.lang.String]
+2025-07-10T16:59:51.339+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [a6b7e42] Writing "Handled RuntimeException-> Cannot invoke "org.springframework.data.redis.core.ReactiveRedisTemplate. (truncated)..."
+2025-07-10T16:59:51.340+05:30 DEBUG 89707 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [a6b7e42] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T17:00:09.890+05:30 DEBUG 89707 --- [http-nio-8000-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [63833718] HTTP POST "/carts/user/1"
+2025-07-10T17:00:09.891+05:30 DEBUG 89707 --- [http-nio-8000-exec-4] o.s.w.r.f.s.s.RouterFunctionMapping      : [63833718] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007577a8516458@277f97f6
+2025-07-10T17:00:09.892+05:30 DEBUG 89707 --- [http-nio-8000-exec-4] org.springframework.web.HttpLogging      : [63833718] Decoded [Cart(id=null, userId=null, status=ACTIVE)]
+2025-07-10T17:00:09.897+05:30 DEBUG 89707 --- [http-nio-8000-exec-4] s.w.r.r.m.a.RequestMappingHandlerAdapter : [63833718] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T17:00:09.898+05:30 DEBUG 89707 --- [http-nio-8000-exec-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [63833718] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T17:00:09.898+05:30 DEBUG 89707 --- [http-nio-8000-exec-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [63833718] 0..1 [java.lang.String]
+2025-07-10T17:00:09.898+05:30 DEBUG 89707 --- [http-nio-8000-exec-4] org.springframework.web.HttpLogging      : [63833718] Writing "Handled RuntimeException-> Cannot invoke "org.springframework.data.redis.core.ReactiveRedisTemplate. (truncated)..."
+2025-07-10T17:00:09.900+05:30 DEBUG 89707 --- [http-nio-8000-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [63833718] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T17:01:19.082+05:30  INFO 89707 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Stopping redis server...
+2025-07-10T17:01:19.094+05:30  INFO 89707 --- [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2025-07-10T17:01:19.138+05:30  INFO 89707 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Redis exited
+2025-07-10T17:01:37.910+05:30  INFO 91436 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 91436 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T17:01:37.914+05:30  INFO 91436 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T17:01:39.326+05:30  INFO 91436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T17:01:39.327+05:30  INFO 91436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T17:01:39.475+05:30  INFO 91436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T17:01:40.360+05:30  INFO 91436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T17:01:40.364+05:30  INFO 91436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T17:01:40.389+05:30  INFO 91436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-07-10T17:01:41.411+05:30  INFO 91436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8000 (http)
+2025-07-10T17:01:41.443+05:30  INFO 91436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T17:01:41.444+05:30  INFO 91436 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-10T17:01:43.075+05:30 DEBUG 91436 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/ws/chat] in 'webSocketMapping'
+2025-07-10T17:01:43.191+05:30 DEBUG 91436 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T17:01:43.965+05:30 DEBUG 91436 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-07-10T17:01:43.974+05:30 DEBUG 91436 --- [main] o.s.w.r.f.s.s.RouterFunctionMapping      : 6 RouterFunction(s) in 'routerFunctionMapping'
+2025-07-10T17:01:44.106+05:30  INFO 91436 --- [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2025-07-10T17:01:44.353+05:30  INFO 91436 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-10T17:01:44.459+05:30 DEBUG 91436 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-07-10T17:01:44.536+05:30 DEBUG 91436 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T17:01:44.626+05:30  INFO 91436 --- [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-07-10T17:01:46.062+05:30  INFO 91436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8000 (http)
+2025-07-10T17:01:46.260+05:30  INFO 91436 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: ChatService, bean: chatServiceImpl, class: com.evolve.grpc.ChatServiceImpl
+2025-07-10T17:01:46.260+05:30  INFO 91436 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-07-10T17:01:46.261+05:30  INFO 91436 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-07-10T17:01:46.490+05:30  INFO 91436 --- [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-07-10T17:01:46.601+05:30  INFO 91436 --- [main] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port 7000
+2025-07-10T17:01:46.641+05:30  INFO 91436 --- [main] com.evolve.springbootapp.SpringBootApp   : Started SpringBootApp in 9.861 seconds (process running for 10.66)
+2025-07-10T17:02:17.437+05:30 DEBUG 91436 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [79d4efa9] HTTP POST "/users"
+2025-07-10T17:02:17.482+05:30 DEBUG 91436 --- [http-nio-8000-exec-1] o.s.w.r.f.s.s.RouterFunctionMapping      : [79d4efa9] Mapped to com.evolve.route.UserRouter$$Lambda/0x00007ea3f850bd70@80a0384
+2025-07-10T17:02:17.519+05:30  WARN 91436 --- [http-nio-8000-exec-1] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-10T17:02:17.572+05:30 DEBUG 91436 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [79d4efa9] Decoded [Usr(id=null, name=john.doe@example.com, email=John Doe)]
+2025-07-10T17:02:17.727+05:30 DEBUG 91436 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [79d4efa9] Encoding [Usr(id=1, name=john.doe@example.com, email=John Doe)]
+2025-07-10T17:02:17.757+05:30 DEBUG 91436 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [79d4efa9] Completed 200 OK
+2025-07-10T17:02:29.380+05:30 DEBUG 91436 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [20a252a5] HTTP POST "/carts/user"
+2025-07-10T17:02:29.381+05:30 DEBUG 91436 --- [http-nio-8000-exec-3] o.s.w.r.f.s.s.RouterFunctionMapping      : [20a252a5] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007ea3f8516458@2e65b8c1
+2025-07-10T17:02:29.393+05:30 DEBUG 91436 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [20a252a5] Resolved [IllegalArgumentException: No path variable with name "userId" available] for HTTP POST /carts/user
+2025-07-10T17:02:29.394+05:30 ERROR 91436 --- [http-nio-8000-exec-3] a.w.r.e.AbstractErrorWebExceptionHandler : [20a252a5]  500 Server Error for HTTP POST "/carts/user"
+
+java.lang.IllegalArgumentException: No path variable with name "userId" available
+	at org.springframework.web.reactive.function.server.ServerRequest.pathVariable(ServerRequest.java:278) ~[spring-webflux-6.1.8.jar:6.1.8]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ HTTP POST "/carts/user" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.server.ServerRequest.pathVariable(ServerRequest.java:278) ~[spring-webflux-6.1.8.jar:6.1.8]
+		at com.evolve.handler.CartHandler.create(CartHandler.java:45) ~[classes/:na]
+		at org.springframework.web.reactive.function.server.support.HandlerFunctionAdapter.handle(HandlerFunctionAdapter.java:61) ~[spring-webflux-6.1.8.jar:6.1.8]
+		at org.springframework.web.reactive.DispatcherHandler.handleRequestWith(DispatcherHandler.java:206) ~[spring-webflux-6.1.8.jar:6.1.8]
+		at org.springframework.web.reactive.DispatcherHandler.lambda$handle$2(DispatcherHandler.java:154) ~[spring-webflux-6.1.8.jar:6.1.8]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:259) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:865) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.request(FluxPeek.java:138) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:339) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onSubscribe(MonoNext.java:70) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onSubscribe(FluxConcatMapNoPrefetch.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.6.jar:3.6.6]
+		at org.springframework.http.server.reactive.ServletHttpHandlerAdapter.service(ServletHttpHandlerAdapter.java:199) ~[spring-web-6.1.8.jar:6.1.8]
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-07-10T17:02:29.427+05:30 DEBUG 91436 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [20a252a5] Encoding [{timestamp=Thu Jul 10 17:02:29 IST 2025, path=/carts/user, status=500, error=Internal Server Error,  (truncated)...]
+2025-07-10T17:02:29.455+05:30 DEBUG 91436 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [20a252a5] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T17:06:35.865+05:30  INFO 91436 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Stopping redis server...
+2025-07-10T17:06:35.881+05:30  INFO 91436 --- [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2025-07-10T17:06:35.940+05:30  INFO 91436 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Redis exited
+2025-07-10T17:06:36.055+05:30  INFO 91436 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-10T17:06:36.097+05:30 ERROR 91436 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+reactor.core.Exceptions$ReactiveException: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:7000
+	at reactor.core.Exceptions.propagate(Exceptions.java:410) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:102) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.block(Mono.java:1779) ~[reactor-core-3.6.6.jar:3.6.6]
+	at com.evolve.springbootapp.RSocketClient.run(RSocketClient.java:14) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774) ~[spring-boot-3.3.0.jar:3.3.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.evolve.springbootapp.SpringBootApp.main(SpringBootApp.java:25) ~[classes/:na]
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104) ~[reactor-core-3.6.6.jar:3.6.6]
+		... 22 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:7000
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:166) ~[netty-transport-native-unix-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131) ~[netty-transport-native-unix-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:359) ~[netty-transport-native-unix-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:715) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:692) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:567) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:491) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:399) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994) ~[netty-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.110.Final.jar:4.1.110.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-07-10T17:06:36.102+05:30  WARN 91436 --- [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Failed to stop bean 'reactorResourceFactory'
+
+reactor.core.Exceptions$ReactiveException: java.lang.InterruptedException
+	at reactor.core.Exceptions.propagate(Exceptions.java:410) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:96) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.block(Mono.java:1779) ~[reactor-core-3.6.6.jar:3.6.6]
+	at org.springframework.http.client.ReactorResourceFactory.stop(ReactorResourceFactory.java:251) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:361) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:487) ~[spring-context-6.1.8.jar:6.1.8]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:317) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:218) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1139) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-3.3.0.jar:3.3.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-3.3.0.jar:3.3.0]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1100) ~[na:na]
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:230) ~[na:na]
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:91) ~[reactor-core-3.6.6.jar:3.6.6]
+	... 14 common frames omitted
+
+2025-07-10T17:06:48.507+05:30  INFO 91875 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 91875 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T17:06:48.512+05:30  INFO 91875 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T17:06:49.759+05:30  INFO 91875 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T17:06:49.760+05:30  INFO 91875 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T17:06:49.910+05:30  INFO 91875 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T17:06:50.614+05:30  INFO 91875 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T17:06:50.618+05:30  INFO 91875 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T17:06:50.645+05:30  INFO 91875 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-10T17:06:51.714+05:30  INFO 91875 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8000 (http)
+2025-07-10T17:06:51.744+05:30  INFO 91875 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T17:06:51.745+05:30  INFO 91875 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-10T17:06:53.078+05:30 DEBUG 91875 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/ws/chat] in 'webSocketMapping'
+2025-07-10T17:06:53.187+05:30 DEBUG 91875 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T17:06:54.206+05:30 DEBUG 91875 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-07-10T17:06:54.220+05:30 DEBUG 91875 --- [main] o.s.w.r.f.s.s.RouterFunctionMapping      : 6 RouterFunction(s) in 'routerFunctionMapping'
+2025-07-10T17:06:54.380+05:30  INFO 91875 --- [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2025-07-10T17:06:54.608+05:30  INFO 91875 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-10T17:06:54.693+05:30 DEBUG 91875 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-07-10T17:06:54.771+05:30 DEBUG 91875 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T17:06:54.873+05:30  INFO 91875 --- [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-07-10T17:06:56.017+05:30  INFO 91875 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8000 (http)
+2025-07-10T17:06:56.199+05:30  INFO 91875 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: ChatService, bean: chatServiceImpl, class: com.evolve.grpc.ChatServiceImpl
+2025-07-10T17:06:56.200+05:30  INFO 91875 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-07-10T17:06:56.200+05:30  INFO 91875 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-07-10T17:06:56.405+05:30  INFO 91875 --- [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-07-10T17:06:56.503+05:30  INFO 91875 --- [main] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port 7000
+2025-07-10T17:06:56.540+05:30  INFO 91875 --- [main] com.evolve.springbootapp.SpringBootApp   : Started SpringBootApp in 9.112 seconds (process running for 9.861)
+2025-07-10T17:07:09.429+05:30 DEBUG 91875 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [531aa94b] HTTP POST "/users"
+2025-07-10T17:07:09.471+05:30 DEBUG 91875 --- [http-nio-8000-exec-1] o.s.w.r.f.s.s.RouterFunctionMapping      : [531aa94b] Mapped to com.evolve.route.UserRouter$$Lambda/0x000074ca2450d838@2798b7ba
+2025-07-10T17:07:09.503+05:30  WARN 91875 --- [http-nio-8000-exec-1] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-10T17:07:09.552+05:30 DEBUG 91875 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [531aa94b] Decoded [Usr(id=null, name=john.doe@example.com, email=John Doe)]
+2025-07-10T17:07:09.691+05:30 DEBUG 91875 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [531aa94b] Encoding [Usr(id=1, name=john.doe@example.com, email=John Doe)]
+2025-07-10T17:07:09.722+05:30 DEBUG 91875 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [531aa94b] Completed 200 OK
+2025-07-10T17:07:27.848+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3e37800c] HTTP POST "/carts/user"
+2025-07-10T17:07:27.850+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] o.s.w.r.f.s.s.RouterFunctionMapping      : [3e37800c] Mapped to com.evolve.route.CartRouter$$Lambda/0x000074ca24518218@30f069ba
+2025-07-10T17:07:27.902+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [3e37800c] Decoded [Cart(id=12, userId=1, status=ACTIVE)]
+2025-07-10T17:07:27.940+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] s.w.r.r.m.a.RequestMappingHandlerAdapter : [3e37800c] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T17:07:27.950+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [3e37800c] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T17:07:27.951+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [3e37800c] 0..1 [java.lang.String]
+2025-07-10T17:07:27.952+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [3e37800c] Writing "Handled RuntimeException-> Failed to update table [carts]; Row with Id [12] does not exist"
+2025-07-10T17:07:27.957+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [3e37800c] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T17:07:37.127+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [34c53ea8] HTTP POST "/carts/user"
+2025-07-10T17:07:37.130+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] o.s.w.r.f.s.s.RouterFunctionMapping      : [34c53ea8] Mapped to com.evolve.route.CartRouter$$Lambda/0x000074ca24518218@30f069ba
+2025-07-10T17:07:37.132+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] org.springframework.web.HttpLogging      : [34c53ea8] Decoded [Cart(id=12, userId=null, status=ACTIVE)]
+2025-07-10T17:07:37.138+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] s.w.r.r.m.a.RequestMappingHandlerAdapter : [34c53ea8] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T17:07:37.139+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] .s.w.r.r.m.a.ResponseEntityResultHandler : [34c53ea8] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T17:07:37.140+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] .s.w.r.r.m.a.ResponseEntityResultHandler : [34c53ea8] 0..1 [java.lang.String]
+2025-07-10T17:07:37.140+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] org.springframework.web.HttpLogging      : [34c53ea8] Writing "Handled RuntimeException-> Failed to update table [carts]; Row with Id [12] does not exist"
+2025-07-10T17:07:37.142+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [34c53ea8] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T17:07:44.307+05:30 DEBUG 91875 --- [http-nio-8000-exec-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4faf5be3] HTTP POST "/carts/user"
+2025-07-10T17:07:44.308+05:30 DEBUG 91875 --- [http-nio-8000-exec-6] o.s.w.r.f.s.s.RouterFunctionMapping      : [4faf5be3] Mapped to com.evolve.route.CartRouter$$Lambda/0x000074ca24518218@30f069ba
+2025-07-10T17:07:44.310+05:30 DEBUG 91875 --- [http-nio-8000-exec-6] org.springframework.web.HttpLogging      : [4faf5be3] Decoded [Cart(id=null, userId=null, status=ACTIVE)]
+2025-07-10T17:07:44.349+05:30 DEBUG 91875 --- [http-nio-8000-exec-6] s.w.r.r.m.a.RequestMappingHandlerAdapter : [4faf5be3] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T17:07:44.350+05:30 DEBUG 91875 --- [http-nio-8000-exec-6] .s.w.r.r.m.a.ResponseEntityResultHandler : [4faf5be3] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T17:07:44.351+05:30 DEBUG 91875 --- [http-nio-8000-exec-6] .s.w.r.r.m.a.ResponseEntityResultHandler : [4faf5be3] 0..1 [java.lang.String]
+2025-07-10T17:07:44.351+05:30 DEBUG 91875 --- [http-nio-8000-exec-6] org.springframework.web.HttpLogging      : [4faf5be3] Writing "Handled RuntimeException-> executeMany; SQL [INSERT INTO carts (STATUS) VALUES ($1)]; NULL not allow (truncated)..."
+2025-07-10T17:07:44.353+05:30 DEBUG 91875 --- [http-nio-8000-exec-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4faf5be3] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T17:09:02.471+05:30 DEBUG 91875 --- [http-nio-8000-exec-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [119d4fcb] HTTP POST "/carts/user"
+2025-07-10T17:09:02.474+05:30 DEBUG 91875 --- [http-nio-8000-exec-9] o.s.w.r.f.s.s.RouterFunctionMapping      : [119d4fcb] Mapped to com.evolve.route.CartRouter$$Lambda/0x000074ca24518218@30f069ba
+2025-07-10T17:09:02.476+05:30 DEBUG 91875 --- [http-nio-8000-exec-9] org.springframework.web.HttpLogging      : [119d4fcb] Decoded [Cart(id=1, userId=null, status=ACTIVE)]
+2025-07-10T17:09:02.484+05:30 DEBUG 91875 --- [http-nio-8000-exec-9] s.w.r.r.m.a.RequestMappingHandlerAdapter : [119d4fcb] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T17:09:02.486+05:30 DEBUG 91875 --- [http-nio-8000-exec-9] .s.w.r.r.m.a.ResponseEntityResultHandler : [119d4fcb] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T17:09:02.487+05:30 DEBUG 91875 --- [http-nio-8000-exec-9] .s.w.r.r.m.a.ResponseEntityResultHandler : [119d4fcb] 0..1 [java.lang.String]
+2025-07-10T17:09:02.487+05:30 DEBUG 91875 --- [http-nio-8000-exec-9] org.springframework.web.HttpLogging      : [119d4fcb] Writing "Handled RuntimeException-> Failed to update table [carts]; Row with Id [1] does not exist"
+2025-07-10T17:09:02.490+05:30 DEBUG 91875 --- [http-nio-8000-exec-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [119d4fcb] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T17:13:02.553+05:30 DEBUG 91875 --- [http-nio-8000-exec-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [14ce65f4] HTTP POST "/carts/user/1"
+2025-07-10T17:13:02.557+05:30 DEBUG 91875 --- [http-nio-8000-exec-2] s.w.r.r.m.a.RequestMappingHandlerAdapter : [14ce65f4] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T17:13:02.558+05:30 DEBUG 91875 --- [http-nio-8000-exec-2] .s.w.r.r.m.a.ResponseEntityResultHandler : [14ce65f4] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T17:13:02.559+05:30 DEBUG 91875 --- [http-nio-8000-exec-2] .s.w.r.r.m.a.ResponseEntityResultHandler : [14ce65f4] 0..1 [java.lang.String]
+2025-07-10T17:13:02.559+05:30 DEBUG 91875 --- [http-nio-8000-exec-2] org.springframework.web.HttpLogging      : [14ce65f4] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-10T17:13:02.561+05:30 DEBUG 91875 --- [http-nio-8000-exec-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [14ce65f4] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T17:13:11.791+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [677888d2] HTTP POST "/carts/user/1"
+2025-07-10T17:13:11.794+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] s.w.r.r.m.a.RequestMappingHandlerAdapter : [677888d2] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T17:13:11.795+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [677888d2] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T17:13:11.795+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [677888d2] 0..1 [java.lang.String]
+2025-07-10T17:13:11.796+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [677888d2] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-10T17:13:11.797+05:30 DEBUG 91875 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [677888d2] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T17:13:19.941+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5491396b] HTTP POST "/carts/user"
+2025-07-10T17:13:19.942+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] o.s.w.r.f.s.s.RouterFunctionMapping      : [5491396b] Mapped to com.evolve.route.CartRouter$$Lambda/0x000074ca24518218@30f069ba
+2025-07-10T17:13:19.943+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] org.springframework.web.HttpLogging      : [5491396b] Decoded [Cart(id=1, userId=null, status=ACTIVE)]
+2025-07-10T17:13:19.948+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] s.w.r.r.m.a.RequestMappingHandlerAdapter : [5491396b] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T17:13:19.949+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] .s.w.r.r.m.a.ResponseEntityResultHandler : [5491396b] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T17:13:19.949+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] .s.w.r.r.m.a.ResponseEntityResultHandler : [5491396b] 0..1 [java.lang.String]
+2025-07-10T17:13:19.949+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] org.springframework.web.HttpLogging      : [5491396b] Writing "Handled RuntimeException-> Failed to update table [carts]; Row with Id [1] does not exist"
+2025-07-10T17:13:19.951+05:30 DEBUG 91875 --- [http-nio-8000-exec-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5491396b] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T18:01:02.588+05:30  INFO 91875 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Stopping redis server...
+2025-07-10T18:01:02.600+05:30  INFO 91875 --- [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2025-07-10T18:01:02.622+05:30  INFO 91875 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Redis exited
+2025-07-10T18:01:12.307+05:30  INFO 93866 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 93866 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T18:01:12.313+05:30  INFO 93866 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T18:01:13.671+05:30  INFO 93866 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T18:01:13.672+05:30  INFO 93866 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T18:01:13.845+05:30  INFO 93866 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 167 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T18:01:14.546+05:30  INFO 93866 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T18:01:14.562+05:30  INFO 93866 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T18:01:14.585+05:30  INFO 93866 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-10T18:01:15.475+05:30  INFO 93866 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8000 (http)
+2025-07-10T18:01:15.501+05:30  INFO 93866 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T18:01:15.502+05:30  INFO 93866 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-10T18:01:16.636+05:30 DEBUG 93866 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/ws/chat] in 'webSocketMapping'
+2025-07-10T18:01:16.738+05:30 DEBUG 93866 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T18:01:17.688+05:30 DEBUG 93866 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-07-10T18:01:17.697+05:30 DEBUG 93866 --- [main] o.s.w.r.f.s.s.RouterFunctionMapping      : 6 RouterFunction(s) in 'routerFunctionMapping'
+2025-07-10T18:01:17.845+05:30  INFO 93866 --- [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2025-07-10T18:01:18.076+05:30  INFO 93866 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-10T18:01:18.160+05:30 DEBUG 93866 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-07-10T18:01:18.215+05:30 DEBUG 93866 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T18:01:18.294+05:30  INFO 93866 --- [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-07-10T18:01:19.289+05:30  INFO 93866 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8000 (http)
+2025-07-10T18:01:19.505+05:30  INFO 93866 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: ChatService, bean: chatServiceImpl, class: com.evolve.grpc.ChatServiceImpl
+2025-07-10T18:01:19.506+05:30  INFO 93866 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-07-10T18:01:19.507+05:30  INFO 93866 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-07-10T18:01:19.699+05:30  INFO 93866 --- [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-07-10T18:01:19.794+05:30  INFO 93866 --- [main] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port 7000
+2025-07-10T18:01:19.829+05:30  INFO 93866 --- [main] com.evolve.springbootapp.SpringBootApp   : Started SpringBootApp in 8.665 seconds (process running for 9.402)
+2025-07-10T18:01:31.023+05:30 DEBUG 93866 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6fef1a3c] HTTP POST "/users"
+2025-07-10T18:01:31.057+05:30 DEBUG 93866 --- [http-nio-8000-exec-1] o.s.w.r.f.s.s.RouterFunctionMapping      : [6fef1a3c] Mapped to com.evolve.route.UserRouter$$Lambda/0x000076660850c890@39a7c33
+2025-07-10T18:01:31.095+05:30  WARN 93866 --- [http-nio-8000-exec-1] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-10T18:01:31.156+05:30 DEBUG 93866 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [6fef1a3c] Decoded [Usr(id=null, name=john.doe@example.com, email=John Doe)]
+2025-07-10T18:01:31.290+05:30 DEBUG 93866 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [6fef1a3c] Encoding [Usr(id=1, name=john.doe@example.com, email=John Doe)]
+2025-07-10T18:01:31.318+05:30 DEBUG 93866 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6fef1a3c] Completed 200 OK
+2025-07-10T18:01:47.622+05:30 DEBUG 93866 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1a9851fa] HTTP POST "/carts/user/1"
+2025-07-10T18:01:47.629+05:30 DEBUG 93866 --- [http-nio-8000-exec-3] s.w.r.r.m.a.RequestMappingHandlerAdapter : [1a9851fa] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T18:01:47.638+05:30 DEBUG 93866 --- [http-nio-8000-exec-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [1a9851fa] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T18:01:47.639+05:30 DEBUG 93866 --- [http-nio-8000-exec-3] .s.w.r.r.m.a.ResponseEntityResultHandler : [1a9851fa] 0..1 [java.lang.String]
+2025-07-10T18:01:47.640+05:30 DEBUG 93866 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [1a9851fa] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-10T18:01:47.646+05:30 DEBUG 93866 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1a9851fa] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T18:04:57.271+05:30 DEBUG 93866 --- [http-nio-8000-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4e09721] HTTP POST "/carts/user/1"
+2025-07-10T18:04:57.275+05:30 DEBUG 93866 --- [http-nio-8000-exec-4] s.w.r.r.m.a.RequestMappingHandlerAdapter : [4e09721] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T18:04:57.277+05:30 DEBUG 93866 --- [http-nio-8000-exec-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [4e09721] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T18:04:57.277+05:30 DEBUG 93866 --- [http-nio-8000-exec-4] .s.w.r.r.m.a.ResponseEntityResultHandler : [4e09721] 0..1 [java.lang.String]
+2025-07-10T18:04:57.278+05:30 DEBUG 93866 --- [http-nio-8000-exec-4] org.springframework.web.HttpLogging      : [4e09721] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-10T18:04:57.281+05:30 DEBUG 93866 --- [http-nio-8000-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4e09721] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T18:05:08.515+05:30  INFO 93866 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Stopping redis server...
+2025-07-10T18:05:08.533+05:30  INFO 93866 --- [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2025-07-10T18:05:08.548+05:30  INFO 93866 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Redis exited
+2025-07-10T21:23:10.479+05:30  INFO 95476 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 95476 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T21:23:10.484+05:30  INFO 95476 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T21:23:11.693+05:30  INFO 95476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T21:23:11.694+05:30  INFO 95476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T21:23:11.850+05:30  INFO 95476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T21:23:12.532+05:30  INFO 95476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T21:23:12.535+05:30  INFO 95476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T21:23:12.569+05:30  INFO 95476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-10T21:23:13.464+05:30  INFO 95476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8000 (http)
+2025-07-10T21:23:13.499+05:30  INFO 95476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T21:23:13.500+05:30  INFO 95476 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-10T21:23:14.673+05:30 DEBUG 95476 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/ws/chat] in 'webSocketMapping'
+2025-07-10T21:23:14.778+05:30 DEBUG 95476 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T21:23:15.774+05:30 DEBUG 95476 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-07-10T21:23:15.784+05:30 DEBUG 95476 --- [main] o.s.w.r.f.s.s.RouterFunctionMapping      : 6 RouterFunction(s) in 'routerFunctionMapping'
+2025-07-10T21:23:15.940+05:30  INFO 95476 --- [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2025-07-10T21:23:16.185+05:30  INFO 95476 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-10T21:23:16.281+05:30 DEBUG 95476 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-07-10T21:23:16.345+05:30 DEBUG 95476 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T21:23:16.431+05:30  INFO 95476 --- [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-07-10T21:23:17.659+05:30  INFO 95476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8000 (http)
+2025-07-10T21:23:17.854+05:30  INFO 95476 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: ChatService, bean: chatServiceImpl, class: com.evolve.grpc.ChatServiceImpl
+2025-07-10T21:23:17.855+05:30  INFO 95476 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-07-10T21:23:17.856+05:30  INFO 95476 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-07-10T21:23:18.054+05:30  INFO 95476 --- [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-07-10T21:23:18.129+05:30  INFO 95476 --- [main] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port 7000
+2025-07-10T21:23:18.154+05:30  INFO 95476 --- [main] com.evolve.springbootapp.SpringBootApp   : Started SpringBootApp in 8.748 seconds (process running for 9.506)
+2025-07-10T21:23:45.978+05:30 DEBUG 95476 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [29a54852] HTTP POST "/users"
+2025-07-10T21:23:46.016+05:30 DEBUG 95476 --- [http-nio-8000-exec-1] o.s.w.r.f.s.s.RouterFunctionMapping      : [29a54852] Mapped to com.evolve.route.UserRouter$$Lambda/0x000078c44850ad78@fda51d1
+2025-07-10T21:23:46.050+05:30  WARN 95476 --- [http-nio-8000-exec-1] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-10T21:23:46.095+05:30 DEBUG 95476 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [29a54852] Decoded [Usr(id=null, name=john.doe@example.com, email=John Doe)]
+2025-07-10T21:23:46.251+05:30 DEBUG 95476 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [29a54852] Encoding [Usr(id=1, name=john.doe@example.com, email=John Doe)]
+2025-07-10T21:23:46.284+05:30 DEBUG 95476 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [29a54852] Completed 200 OK
+2025-07-10T21:26:29.081+05:30 DEBUG 95476 --- [http-nio-8000-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [19a5f3a] HTTP GET "/orders/user/1"
+2025-07-10T21:26:29.085+05:30 DEBUG 95476 --- [http-nio-8000-exec-4] o.s.w.r.f.s.s.RouterFunctionMapping      : [19a5f3a] Mapped to com.evolve.route.OrderRouter$$Lambda/0x000078c448516180@b62344a
+2025-07-10T21:26:29.177+05:30 DEBUG 95476 --- [http-nio-8000-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [19a5f3a] Completed 200 OK
+2025-07-10T21:26:42.809+05:30 DEBUG 95476 --- [http-nio-8000-exec-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5d2c13d] HTTP POST "/orders/user/1"
+2025-07-10T21:26:42.810+05:30 DEBUG 95476 --- [http-nio-8000-exec-6] o.s.w.r.f.s.s.RouterFunctionMapping      : [5d2c13d] Mapped to com.evolve.route.OrderRouter$$Lambda/0x000078c448516398@b152ff7
+2025-07-10T21:26:42.812+05:30  WARN 95476 --- [http-nio-8000-exec-6] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-10T21:26:42.848+05:30 DEBUG 95476 --- [http-nio-8000-exec-6] org.springframework.web.HttpLogging      : [5d2c13d] Decoded [Order(id=null, status=ACTIVE, userId=1)]
+2025-07-10T21:26:42.856+05:30  INFO 95476 --- [http-nio-8000-exec-6] com.evolve.handler.OrderHandler          : Validating Order-User 1
+2025-07-10T21:26:42.864+05:30 DEBUG 95476 --- [http-nio-8000-exec-6] s.w.r.r.m.a.RequestMappingHandlerAdapter : [5d2c13d] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleAllExceptions(OrderException)
+2025-07-10T21:26:42.875+05:30 DEBUG 95476 --- [http-nio-8000-exec-6] .s.w.r.r.m.a.ResponseEntityResultHandler : [5d2c13d] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T21:26:42.875+05:30 DEBUG 95476 --- [http-nio-8000-exec-6] .s.w.r.r.m.a.ResponseEntityResultHandler : [5d2c13d] 0..1 [java.lang.String]
+2025-07-10T21:26:42.877+05:30 DEBUG 95476 --- [http-nio-8000-exec-6] org.springframework.web.HttpLogging      : [5d2c13d] Writing "Order Exception: Simulated checked exception"
+2025-07-10T21:26:42.882+05:30 DEBUG 95476 --- [http-nio-8000-exec-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5d2c13d] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T21:29:09.467+05:30 DEBUG 95476 --- [http-nio-8000-exec-8] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1a9851fa] HTTP POST "/orders/user?userId=1"
+2025-07-10T21:29:09.472+05:30 DEBUG 95476 --- [http-nio-8000-exec-8] s.w.r.r.m.a.RequestMappingHandlerAdapter : [1a9851fa] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T21:29:09.474+05:30 DEBUG 95476 --- [http-nio-8000-exec-8] .s.w.r.r.m.a.ResponseEntityResultHandler : [1a9851fa] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T21:29:09.474+05:30 DEBUG 95476 --- [http-nio-8000-exec-8] .s.w.r.r.m.a.ResponseEntityResultHandler : [1a9851fa] 0..1 [java.lang.String]
+2025-07-10T21:29:09.475+05:30 DEBUG 95476 --- [http-nio-8000-exec-8] org.springframework.web.HttpLogging      : [1a9851fa] Writing "Handled RuntimeException-> 404 NOT_FOUND"
+2025-07-10T21:29:09.477+05:30 DEBUG 95476 --- [http-nio-8000-exec-8] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1a9851fa] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T21:36:49.151+05:30 DEBUG 95476 --- [http-nio-8000-exec-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [20a252a5] HTTP POST "/users"
+2025-07-10T21:36:49.153+05:30 DEBUG 95476 --- [http-nio-8000-exec-10] o.s.w.r.f.s.s.RouterFunctionMapping      : [20a252a5] Mapped to com.evolve.route.UserRouter$$Lambda/0x000078c44850ad78@fda51d1
+2025-07-10T21:36:49.155+05:30  WARN 95476 --- [http-nio-8000-exec-10] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-10T21:36:49.157+05:30 DEBUG 95476 --- [http-nio-8000-exec-10] org.springframework.web.HttpLogging      : [20a252a5] Decoded [Usr(id=null, name=rahul@example.com, email=Rahul Sharma)]
+2025-07-10T21:36:49.162+05:30 DEBUG 95476 --- [http-nio-8000-exec-10] org.springframework.web.HttpLogging      : [20a252a5] Encoding [Usr(id=2, name=rahul@example.com, email=Rahul Sharma)]
+2025-07-10T21:36:49.163+05:30 DEBUG 95476 --- [http-nio-8000-exec-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [20a252a5] Completed 200 OK
+2025-07-10T21:37:07.811+05:30 DEBUG 95476 --- [http-nio-8000-exec-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4da25132] HTTP POST "/carts/user/2002"
+2025-07-10T21:37:07.813+05:30 DEBUG 95476 --- [http-nio-8000-exec-2] o.s.w.r.f.s.s.RouterFunctionMapping      : [4da25132] Mapped to com.evolve.route.CartRouter$$Lambda/0x000078c4485154f0@4052cbc6
+2025-07-10T21:37:07.817+05:30 DEBUG 95476 --- [http-nio-8000-exec-2] org.springframework.web.HttpLogging      : [4da25132] Decoded [Cart(id=null, userId=null, status=ACTIVE)]
+2025-07-10T21:37:07.827+05:30 DEBUG 95476 --- [http-nio-8000-exec-2] s.w.r.r.m.a.RequestMappingHandlerAdapter : [4da25132] Using @ExceptionHandler com.evolve.exception.GlobalExceptionHandler#handleRuntimeException(RuntimeException)
+2025-07-10T21:37:07.828+05:30 DEBUG 95476 --- [http-nio-8000-exec-2] .s.w.r.r.m.a.ResponseEntityResultHandler : [4da25132] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2025-07-10T21:37:07.829+05:30 DEBUG 95476 --- [http-nio-8000-exec-2] .s.w.r.r.m.a.ResponseEntityResultHandler : [4da25132] 0..1 [java.lang.String]
+2025-07-10T21:37:07.829+05:30 DEBUG 95476 --- [http-nio-8000-exec-2] org.springframework.web.HttpLogging      : [4da25132] Writing "Handled RuntimeException-> Cannot invoke "org.springframework.data.redis.core.ReactiveRedisTemplate. (truncated)..."
+2025-07-10T21:37:07.831+05:30 DEBUG 95476 --- [http-nio-8000-exec-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [4da25132] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T21:46:15.740+05:30  INFO 95476 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Stopping redis server...
+2025-07-10T21:46:15.754+05:30  INFO 95476 --- [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2025-07-10T21:46:15.836+05:30  INFO 95476 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Redis exited
+2025-07-10T21:46:15.892+05:30  INFO 95476 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-10T21:46:15.912+05:30 ERROR 95476 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+reactor.core.Exceptions$ReactiveException: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:7000
+	at reactor.core.Exceptions.propagate(Exceptions.java:410) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:102) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.block(Mono.java:1779) ~[reactor-core-3.6.6.jar:3.6.6]
+	at com.evolve.springbootapp.RSocketClient.run(RSocketClient.java:14) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88) ~[spring-core-6.1.8.jar:6.1.8]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774) ~[spring-boot-3.3.0.jar:3.3.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:342) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.evolve.springbootapp.SpringBootApp.main(SpringBootApp.java:25) ~[classes/:na]
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104) ~[reactor-core-3.6.6.jar:3.6.6]
+		... 22 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:7000
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:166) ~[netty-transport-native-unix-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131) ~[netty-transport-native-unix-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:359) ~[netty-transport-native-unix-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:715) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:692) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:567) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:491) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:399) ~[netty-transport-classes-epoll-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994) ~[netty-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.110.Final.jar:4.1.110.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.110.Final.jar:4.1.110.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-07-10T21:46:15.918+05:30  WARN 95476 --- [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Failed to stop bean 'reactorResourceFactory'
+
+reactor.core.Exceptions$ReactiveException: java.lang.InterruptedException
+	at reactor.core.Exceptions.propagate(Exceptions.java:410) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:96) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.block(Mono.java:1779) ~[reactor-core-3.6.6.jar:3.6.6]
+	at org.springframework.http.client.ReactorResourceFactory.stop(ReactorResourceFactory.java:251) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:361) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:487) ~[spring-context-6.1.8.jar:6.1.8]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:317) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:218) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1139) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-3.3.0.jar:3.3.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-3.3.0.jar:3.3.0]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1100) ~[na:na]
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:230) ~[na:na]
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:91) ~[reactor-core-3.6.6.jar:3.6.6]
+	... 14 common frames omitted
+
+2025-07-10T21:46:24.039+05:30  INFO 97296 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 97296 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T21:46:24.046+05:30  INFO 97296 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T21:46:25.286+05:30  INFO 97296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T21:46:25.287+05:30  INFO 97296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T21:46:25.455+05:30  INFO 97296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 162 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T21:46:26.136+05:30  INFO 97296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T21:46:26.138+05:30  INFO 97296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T21:46:26.155+05:30  INFO 97296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-07-10T21:46:27.026+05:30  INFO 97296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8000 (http)
+2025-07-10T21:46:27.069+05:30  INFO 97296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T21:46:27.070+05:30  INFO 97296 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-10T21:46:27.954+05:30  WARN 97296 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartHandler' defined in file [/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes/com/evolve/handler/CartHandler.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'org.springframework.data.redis.core.ReactiveRedisTemplate<java.lang.String, com.evolve.model.Cart>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-07-10T21:46:27.981+05:30  INFO 97296 --- [main] redis.embedded.AbstractRedisInstance     : Stopping redis server...
+2025-07-10T21:46:27.993+05:30  INFO 97296 --- [main] redis.embedded.AbstractRedisInstance     : Redis exited
+2025-07-10T21:46:28.019+05:30  INFO 97296 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-10T21:46:28.059+05:30 ERROR 97296 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.evolve.handler.CartHandler required a bean of type 'org.springframework.data.redis.core.ReactiveRedisTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.redis.core.ReactiveRedisTemplate' in your configuration.
+
+2025-07-10T21:48:42.086+05:30  INFO 97506 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 97506 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T21:48:42.091+05:30  INFO 97506 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T21:48:43.291+05:30  INFO 97506 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T21:48:43.293+05:30  INFO 97506 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T21:48:43.435+05:30  INFO 97506 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T21:48:44.061+05:30  INFO 97506 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T21:48:44.064+05:30  INFO 97506 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T21:48:44.085+05:30  INFO 97506 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-07-10T21:48:44.983+05:30  INFO 97506 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8000 (http)
+2025-07-10T21:48:45.007+05:30  INFO 97506 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T21:48:45.008+05:30  INFO 97506 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-10T21:48:46.530+05:30 DEBUG 97506 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/ws/chat] in 'webSocketMapping'
+2025-07-10T21:48:46.633+05:30 DEBUG 97506 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T21:48:46.979+05:30 DEBUG 97506 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-07-10T21:48:46.986+05:30 DEBUG 97506 --- [main] o.s.w.r.f.s.s.RouterFunctionMapping      : 6 RouterFunction(s) in 'routerFunctionMapping'
+2025-07-10T21:48:47.105+05:30  INFO 97506 --- [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2025-07-10T21:48:47.295+05:30  INFO 97506 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-10T21:48:47.366+05:30 DEBUG 97506 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-07-10T21:48:47.412+05:30 DEBUG 97506 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T21:48:47.474+05:30  INFO 97506 --- [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-07-10T21:48:48.474+05:30  INFO 97506 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8000 (http)
+2025-07-10T21:48:48.635+05:30  INFO 97506 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: ChatService, bean: chatServiceImpl, class: com.evolve.grpc.ChatServiceImpl
+2025-07-10T21:48:48.636+05:30  INFO 97506 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-07-10T21:48:48.636+05:30  INFO 97506 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-07-10T21:48:48.824+05:30  INFO 97506 --- [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-07-10T21:48:48.904+05:30  INFO 97506 --- [main] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port 7000
+2025-07-10T21:48:48.934+05:30  INFO 97506 --- [main] com.evolve.springbootapp.SpringBootApp   : Started SpringBootApp in 7.981 seconds (process running for 8.719)
+2025-07-10T21:49:12.627+05:30 DEBUG 97506 --- [http-nio-8000-exec-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5ad019c5] HTTP POST "/users"
+2025-07-10T21:49:12.669+05:30 DEBUG 97506 --- [http-nio-8000-exec-2] o.s.w.r.f.s.s.RouterFunctionMapping      : [5ad019c5] Mapped to com.evolve.route.UserRouter$$Lambda/0x00007a28fc5a0000@6e0f6d96
+2025-07-10T21:49:12.704+05:30  WARN 97506 --- [http-nio-8000-exec-2] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-10T21:49:12.760+05:30 DEBUG 97506 --- [http-nio-8000-exec-2] org.springframework.web.HttpLogging      : [5ad019c5] Decoded [Usr(id=null, name=rahul@example.com, email=Rahul Sharma)]
+2025-07-10T21:49:12.954+05:30 DEBUG 97506 --- [http-nio-8000-exec-2] org.springframework.web.HttpLogging      : [5ad019c5] Encoding [Usr(id=1, name=rahul@example.com, email=Rahul Sharma)]
+2025-07-10T21:49:12.996+05:30 DEBUG 97506 --- [http-nio-8000-exec-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5ad019c5] Completed 200 OK
+2025-07-10T21:49:21.881+05:30 DEBUG 97506 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [283dbc2f] HTTP POST "/carts/user/2003"
+2025-07-10T21:49:21.884+05:30 DEBUG 97506 --- [http-nio-8000-exec-3] o.s.w.r.f.s.s.RouterFunctionMapping      : [283dbc2f] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007a28fc5aa860@26fa4758
+2025-07-10T21:49:21.940+05:30 DEBUG 97506 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [283dbc2f] Decoded [Cart(id=null, userId=null, status=ACTIVE)]
+2025-07-10T21:49:22.408+05:30 DEBUG 97506 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [283dbc2f] Encoding [Cart(id=1, userId=2003, status=ACTIVE)]
+2025-07-10T21:49:22.411+05:30 DEBUG 97506 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [283dbc2f] Completed 200 OK
+2025-07-10T21:51:06.806+05:30 DEBUG 97506 --- [http-nio-8000-exec-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [167a8329] HTTP PUT "/carts/1"
+2025-07-10T21:51:06.807+05:30 DEBUG 97506 --- [http-nio-8000-exec-6] o.s.w.r.f.s.s.RouterFunctionMapping      : [167a8329] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007a28fc5aaa78@18bd7f96
+2025-07-10T21:51:06.809+05:30 DEBUG 97506 --- [http-nio-8000-exec-6] org.springframework.web.HttpLogging      : [167a8329] Decoded [Cart(id=null, userId=null, status=PENDING)]
+2025-07-10T21:51:06.876+05:30 DEBUG 97506 --- [http-nio-8000-exec-6] org.springframework.web.HttpLogging      : [167a8329] Encoding [Cart(id=1, userId=2003, status=PENDING)]
+2025-07-10T21:51:06.878+05:30 DEBUG 97506 --- [http-nio-8000-exec-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [167a8329] Completed 200 OK
+2025-07-10T21:52:18.950+05:30 DEBUG 97506 --- [http-nio-8000-exec-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [2556bf41] HTTP GET "/cart/stream"
+2025-07-10T21:52:18.953+05:30 DEBUG 97506 --- [http-nio-8000-exec-9] o.s.w.r.f.s.s.RouterFunctionMapping      : [2556bf41] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007a28fc5aaea8@2faed431
+2025-07-10T21:52:18.961+05:30 DEBUG 97506 --- [http-nio-8000-exec-9] org.springframework.web.HttpLogging      : [2556bf41] Resolved [NoSuchElementException: No value present] for HTTP GET /cart/stream
+2025-07-10T21:52:18.962+05:30 ERROR 97506 --- [http-nio-8000-exec-9] a.w.r.e.AbstractErrorWebExceptionHandler : [2556bf41]  500 Server Error for HTTP GET "/cart/stream"
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377) ~[na:na]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ HTTP GET "/cart/stream" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at java.base/java.util.Optional.orElseThrow(Optional.java:377) ~[na:na]
+		at com.evolve.handler.CartHandler.streamCartUpdates(CartHandler.java:73) ~[classes/:na]
+		at org.springframework.web.reactive.function.server.support.HandlerFunctionAdapter.handle(HandlerFunctionAdapter.java:61) ~[spring-webflux-6.1.8.jar:6.1.8]
+		at org.springframework.web.reactive.DispatcherHandler.handleRequestWith(DispatcherHandler.java:206) ~[spring-webflux-6.1.8.jar:6.1.8]
+		at org.springframework.web.reactive.DispatcherHandler.lambda$handle$2(DispatcherHandler.java:154) ~[spring-webflux-6.1.8.jar:6.1.8]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:259) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:865) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.request(FluxPeek.java:138) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:339) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onSubscribe(MonoNext.java:70) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onSubscribe(FluxConcatMapNoPrefetch.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.6.jar:3.6.6]
+		at org.springframework.http.server.reactive.ServletHttpHandlerAdapter.service(ServletHttpHandlerAdapter.java:199) ~[spring-web-6.1.8.jar:6.1.8]
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-07-10T21:52:18.980+05:30 DEBUG 97506 --- [http-nio-8000-exec-9] org.springframework.web.HttpLogging      : [2556bf41] Encoding [{timestamp=Thu Jul 10 21:52:18 IST 2025, path=/cart/stream, status=500, error=Internal Server Error, (truncated)...]
+2025-07-10T21:52:18.987+05:30 DEBUG 97506 --- [http-nio-8000-exec-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [2556bf41] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T21:53:30.846+05:30 DEBUG 97506 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [27c3839a] HTTP GET "/cart/stream"
+2025-07-10T21:53:30.850+05:30 DEBUG 97506 --- [http-nio-8000-exec-1] o.s.w.r.f.s.s.RouterFunctionMapping      : [27c3839a] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007a28fc5aaea8@2faed431
+2025-07-10T21:53:30.851+05:30 DEBUG 97506 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [27c3839a] Resolved [NoSuchElementException: No value present] for HTTP GET /cart/stream
+2025-07-10T21:53:30.852+05:30 ERROR 97506 --- [http-nio-8000-exec-1] a.w.r.e.AbstractErrorWebExceptionHandler : [27c3839a]  500 Server Error for HTTP GET "/cart/stream"
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377) ~[na:na]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ HTTP GET "/cart/stream" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at java.base/java.util.Optional.orElseThrow(Optional.java:377) ~[na:na]
+		at com.evolve.handler.CartHandler.streamCartUpdates(CartHandler.java:73) ~[classes/:na]
+		at org.springframework.web.reactive.function.server.support.HandlerFunctionAdapter.handle(HandlerFunctionAdapter.java:61) ~[spring-webflux-6.1.8.jar:6.1.8]
+		at org.springframework.web.reactive.DispatcherHandler.handleRequestWith(DispatcherHandler.java:206) ~[spring-webflux-6.1.8.jar:6.1.8]
+		at org.springframework.web.reactive.DispatcherHandler.lambda$handle$2(DispatcherHandler.java:154) ~[spring-webflux-6.1.8.jar:6.1.8]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:259) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:865) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.request(FluxPeek.java:138) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:339) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onSubscribe(MonoNext.java:70) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onSubscribe(FluxConcatMapNoPrefetch.java:164) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51) ~[reactor-core-3.6.6.jar:3.6.6]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.6.jar:3.6.6]
+		at org.springframework.http.server.reactive.ServletHttpHandlerAdapter.service(ServletHttpHandlerAdapter.java:199) ~[spring-web-6.1.8.jar:6.1.8]
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+		at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-07-10T21:53:30.857+05:30 DEBUG 97506 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [27c3839a] Encoding [{timestamp=Thu Jul 10 21:53:30 IST 2025, path=/cart/stream, status=500, error=Internal Server Error, (truncated)...]
+2025-07-10T21:53:30.859+05:30 DEBUG 97506 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [27c3839a] Completed 500 INTERNAL_SERVER_ERROR
+2025-07-10T21:56:41.578+05:30 DEBUG 97506 --- [http-nio-8000-exec-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [12d1ae73] HTTP GET "/cart/stream?userId=2003"
+2025-07-10T21:56:41.580+05:30 DEBUG 97506 --- [http-nio-8000-exec-2] o.s.w.r.f.s.s.RouterFunctionMapping      : [12d1ae73] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007a28fc5aaea8@2faed431
+2025-07-10T21:56:42.598+05:30 DEBUG 97506 --- [lettuce-epollEventLoop-4-1] org.springframework.web.HttpLogging      : [12d1ae73] Encoding [Cart(id=1, userId=2003, status=ACTIVE)]
+2025-07-10T21:58:23.204+05:30 DEBUG 97506 --- [http-nio-8000-exec-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1a45cce8] HTTP PUT "/carts/1"
+2025-07-10T21:58:23.205+05:30 DEBUG 97506 --- [http-nio-8000-exec-5] o.s.w.r.f.s.s.RouterFunctionMapping      : [1a45cce8] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007a28fc5aaa78@18bd7f96
+2025-07-10T21:58:23.207+05:30 DEBUG 97506 --- [http-nio-8000-exec-5] org.springframework.web.HttpLogging      : [1a45cce8] Decoded [Cart(id=null, userId=null, status=PENDINGG)]
+2025-07-10T21:58:23.214+05:30 DEBUG 97506 --- [http-nio-8000-exec-5] org.springframework.web.HttpLogging      : [1a45cce8] Encoding [Cart(id=1, userId=2003, status=PENDINGG)]
+2025-07-10T21:58:23.216+05:30 DEBUG 97506 --- [http-nio-8000-exec-5] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1a45cce8] Completed 200 OK
+2025-07-10T22:02:11.434+05:30 DEBUG 97506 --- [http-nio-8000-exec-8] o.s.w.s.adapter.HttpWebHandlerAdapter    : [44f306] HTTP POST "/users"
+2025-07-10T22:02:11.437+05:30 DEBUG 97506 --- [http-nio-8000-exec-8] o.s.w.r.f.s.s.RouterFunctionMapping      : [44f306] Mapped to com.evolve.route.UserRouter$$Lambda/0x00007a28fc5a0000@6e0f6d96
+2025-07-10T22:02:11.439+05:30  WARN 97506 --- [http-nio-8000-exec-8] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-10T22:02:11.442+05:30 DEBUG 97506 --- [http-nio-8000-exec-8] org.springframework.web.HttpLogging      : [44f306] Decoded [Usr(id=null, name=rahul@example.com, email=Rahul Kumar)]
+2025-07-10T22:02:11.448+05:30 DEBUG 97506 --- [http-nio-8000-exec-8] org.springframework.web.HttpLogging      : [44f306] Encoding [Usr(id=2, name=rahul@example.com, email=Rahul Kumar)]
+2025-07-10T22:02:11.451+05:30 DEBUG 97506 --- [http-nio-8000-exec-8] o.s.w.s.adapter.HttpWebHandlerAdapter    : [44f306] Completed 200 OK
+2025-07-10T22:02:23.623+05:30 DEBUG 97506 --- [http-nio-8000-exec-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6cedd457] HTTP POST "/carts/user/2004"
+2025-07-10T22:02:23.625+05:30 DEBUG 97506 --- [http-nio-8000-exec-9] o.s.w.r.f.s.s.RouterFunctionMapping      : [6cedd457] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007a28fc5aa860@26fa4758
+2025-07-10T22:02:23.626+05:30 DEBUG 97506 --- [http-nio-8000-exec-9] org.springframework.web.HttpLogging      : [6cedd457] Decoded [Cart(id=null, userId=null, status=PENDING)]
+2025-07-10T22:02:23.634+05:30 DEBUG 97506 --- [http-nio-8000-exec-9] org.springframework.web.HttpLogging      : [6cedd457] Encoding [Cart(id=2, userId=2004, status=PENDING)]
+2025-07-10T22:02:23.636+05:30 DEBUG 97506 --- [http-nio-8000-exec-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6cedd457] Completed 200 OK
+2025-07-10T22:03:02.574+05:30 DEBUG 97506 --- [http-nio-8000-exec-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1e0d855b] HTTP GET "/cart/stream?userId=2003"
+2025-07-10T22:03:02.576+05:30 DEBUG 97506 --- [http-nio-8000-exec-10] o.s.w.r.f.s.s.RouterFunctionMapping      : [1e0d855b] Mapped to com.evolve.route.CartRouter$$Lambda/0x00007a28fc5aaea8@2faed431
+2025-07-10T22:03:03.581+05:30 DEBUG 97506 --- [lettuce-epollEventLoop-4-1] org.springframework.web.HttpLogging      : [1e0d855b] Encoding [Cart(id=1, userId=2003, status=ACTIVE)]
+2025-07-10T22:11:17.762+05:30  INFO 97506 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Stopping redis server...
+2025-07-10T22:11:17.772+05:30  INFO 97506 --- [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2025-07-10T22:11:17.776+05:30 DEBUG 97506 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [12d1ae73] AsyncEvent onTimeout
+2025-07-10T22:11:17.776+05:30 DEBUG 97506 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [1e0d855b] AsyncEvent onTimeout
+2025-07-10T22:11:17.777+05:30 ERROR 97506 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1e0d855b] Error [java.lang.IllegalStateException: Async operation timeout.] for HTTP GET "/cart/stream?userId=2003", but ServerHttpResponse already committed (200 OK)
+2025-07-10T22:11:17.777+05:30 ERROR 97506 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [12d1ae73] Error [java.lang.IllegalStateException: Async operation timeout.] for HTTP GET "/cart/stream?userId=2003", but ServerHttpResponse already committed (200 OK)
+2025-07-10T22:11:17.804+05:30  INFO 97506 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Redis exited
+2025-07-10T22:11:17.906+05:30  INFO 97506 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/127.0.0.1:6379
+2025-07-10T22:11:17.915+05:30  WARN 97506 --- [lettuce-epollEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:6379
+2025-07-10T22:12:51.473+05:30  INFO 98859 --- [main] com.evolve.springbootapp.SpringBootApp   : Starting SpringBootApp using Java 21.0.7 with PID 98859 (/home/nashtech/Desktop/Java-PiShapedLearning/Microservices_WorkShop-RahulSharma/Day-1/eStore-be-app/target/classes started by nashtech in /home/nashtech/Desktop/Java-PiShapedLearning)
+2025-07-10T22:12:51.478+05:30  INFO 98859 --- [main] com.evolve.springbootapp.SpringBootApp   : No active profile set, falling back to 1 default profile: "default"
+2025-07-10T22:12:52.726+05:30  INFO 98859 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T22:12:52.727+05:30  INFO 98859 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-07-10T22:12:52.879+05:30  INFO 98859 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145 ms. Found 5 R2DBC repository interfaces.
+2025-07-10T22:12:53.521+05:30  INFO 98859 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-10T22:12:53.524+05:30  INFO 98859 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-10T22:12:53.542+05:30  INFO 98859 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-10T22:12:54.394+05:30  INFO 98859 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8000 (http)
+2025-07-10T22:12:54.415+05:30  INFO 98859 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-10T22:12:54.416+05:30  INFO 98859 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-07-10T22:12:55.965+05:30 DEBUG 98859 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/ws/chat] in 'webSocketMapping'
+2025-07-10T22:12:56.086+05:30 DEBUG 98859 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T22:12:56.490+05:30 DEBUG 98859 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-07-10T22:12:56.498+05:30 DEBUG 98859 --- [main] o.s.w.r.f.s.s.RouterFunctionMapping      : 6 RouterFunction(s) in 'routerFunctionMapping'
+2025-07-10T22:12:56.619+05:30  INFO 98859 --- [main] n.d.b.g.c.a.GrpcClientAutoConfiguration  : Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+2025-07-10T22:12:56.829+05:30  INFO 98859 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-10T22:12:56.914+05:30 DEBUG 98859 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 @ExceptionHandler
+2025-07-10T22:12:56.974+05:30 DEBUG 98859 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-07-10T22:12:57.051+05:30  INFO 98859 --- [main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2025-07-10T22:12:58.033+05:30  INFO 98859 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8000 (http)
+2025-07-10T22:12:58.195+05:30  INFO 98859 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: ChatService, bean: chatServiceImpl, class: com.evolve.grpc.ChatServiceImpl
+2025-07-10T22:12:58.196+05:30  INFO 98859 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2025-07-10T22:12:58.196+05:30  INFO 98859 --- [main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2025-07-10T22:12:58.361+05:30  INFO 98859 --- [main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9090
+2025-07-10T22:12:58.439+05:30  INFO 98859 --- [main] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port 7000
+2025-07-10T22:12:58.469+05:30  INFO 98859 --- [main] com.evolve.springbootapp.SpringBootApp   : Started SpringBootApp in 8.071 seconds (process running for 8.765)
+2025-07-10T22:13:22.474+05:30 DEBUG 98859 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5c156561] HTTP POST "/users"
+2025-07-10T22:13:22.510+05:30 DEBUG 98859 --- [http-nio-8000-exec-1] o.s.w.r.f.s.s.RouterFunctionMapping      : [5c156561] Mapped to com.evolve.route.UserRouter$$Lambda/0x000074a050598800@5b4c1916
+2025-07-10T22:13:22.540+05:30  WARN 98859 --- [http-nio-8000-exec-1] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2025-07-10T22:13:22.591+05:30 DEBUG 98859 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [5c156561] Decoded [Usr(id=null, name=rahul@example.com, email=Rahul Kumar)]
+2025-07-10T22:13:22.766+05:30 DEBUG 98859 --- [http-nio-8000-exec-1] org.springframework.web.HttpLogging      : [5c156561] Encoding [Usr(id=1, name=rahul@example.com, email=Rahul Kumar)]
+2025-07-10T22:13:22.801+05:30 DEBUG 98859 --- [http-nio-8000-exec-1] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5c156561] Completed 200 OK
+2025-07-10T22:13:31.330+05:30 DEBUG 98859 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6b5af7c3] HTTP POST "/carts/user/2001"
+2025-07-10T22:13:31.332+05:30 DEBUG 98859 --- [http-nio-8000-exec-3] o.s.w.r.f.s.s.RouterFunctionMapping      : [6b5af7c3] Mapped to com.evolve.route.CartRouter$$Lambda/0x000074a0505aa180@659d14d8
+2025-07-10T22:13:31.384+05:30 DEBUG 98859 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [6b5af7c3] Decoded [Cart(id=null, userId=null, status=PENDING)]
+2025-07-10T22:13:31.839+05:30 DEBUG 98859 --- [http-nio-8000-exec-3] org.springframework.web.HttpLogging      : [6b5af7c3] Encoding [Cart(id=1, userId=2001, status=PENDING)]
+2025-07-10T22:13:31.842+05:30 DEBUG 98859 --- [http-nio-8000-exec-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [6b5af7c3] Completed 200 OK
+2025-07-10T22:13:42.198+05:30 DEBUG 98859 --- [http-nio-8000-exec-4] o.s.w.s.adapter.HttpWebHandlerAdapter    : [40d156e1] HTTP GET "/cart/stream?userId=2001"
+2025-07-10T22:13:42.203+05:30 DEBUG 98859 --- [http-nio-8000-exec-4] o.s.w.r.f.s.s.RouterFunctionMapping      : [40d156e1] Mapped to com.evolve.route.CartRouter$$Lambda/0x000074a0505aa7c8@4a293d91
+2025-07-10T22:13:43.226+05:30 DEBUG 98859 --- [lettuce-epollEventLoop-4-1] org.springframework.web.HttpLogging      : [40d156e1] Encoding [Cart(id=1, userId=2001, status=PENDING)]
+2025-07-10T22:13:54.376+05:30 DEBUG 98859 --- [http-nio-8000-exec-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [283dbc2f] HTTP PUT "/carts/1"
+2025-07-10T22:13:54.377+05:30 DEBUG 98859 --- [http-nio-8000-exec-6] o.s.w.r.f.s.s.RouterFunctionMapping      : [283dbc2f] Mapped to com.evolve.route.CartRouter$$Lambda/0x000074a0505aa398@26fa4758
+2025-07-10T22:13:54.379+05:30 DEBUG 98859 --- [http-nio-8000-exec-6] org.springframework.web.HttpLogging      : [283dbc2f] Decoded [Cart(id=null, userId=null, status=PENDING)]
+2025-07-10T22:13:54.448+05:30 DEBUG 98859 --- [http-nio-8000-exec-6] org.springframework.web.HttpLogging      : [283dbc2f] Encoding [Cart(id=1, userId=2001, status=PENDING)]
+2025-07-10T22:13:54.450+05:30 DEBUG 98859 --- [http-nio-8000-exec-6] o.s.w.s.adapter.HttpWebHandlerAdapter    : [283dbc2f] Completed 200 OK
+2025-07-10T22:15:31.198+05:30 DEBUG 98859 --- [http-nio-8000-exec-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [167a8329] HTTP PUT "/carts/1"
+2025-07-10T22:15:31.200+05:30 DEBUG 98859 --- [http-nio-8000-exec-9] o.s.w.r.f.s.s.RouterFunctionMapping      : [167a8329] Mapped to com.evolve.route.CartRouter$$Lambda/0x000074a0505aa398@26fa4758
+2025-07-10T22:15:31.201+05:30 DEBUG 98859 --- [http-nio-8000-exec-9] org.springframework.web.HttpLogging      : [167a8329] Decoded [Cart(id=null, userId=null, status=ACTIVE)]
+2025-07-10T22:15:31.212+05:30 DEBUG 98859 --- [http-nio-8000-exec-9] org.springframework.web.HttpLogging      : [167a8329] Encoding [Cart(id=1, userId=2001, status=ACTIVE)]
+2025-07-10T22:15:31.214+05:30 DEBUG 98859 --- [http-nio-8000-exec-9] o.s.w.s.adapter.HttpWebHandlerAdapter    : [167a8329] Completed 200 OK
+2025-07-10T22:15:32.213+05:30 DEBUG 98859 --- [lettuce-epollEventLoop-4-1] org.springframework.web.HttpLogging      : [40d156e1] Encoding [Cart(id=1, userId=2001, status=ACTIVE)]
+2025-07-10T22:15:56.269+05:30  INFO 98859 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Stopping redis server...
+2025-07-10T22:15:56.279+05:30  INFO 98859 --- [SpringApplicationShutdownHook] n.d.b.g.s.s.GrpcServerLifecycle          : Completed gRPC server shutdown
+2025-07-10T22:15:56.282+05:30 DEBUG 98859 --- [http-nio-8000-exec-10] org.springframework.web.HttpLogging      : [40d156e1] AsyncEvent onTimeout
+2025-07-10T22:15:56.286+05:30 ERROR 98859 --- [http-nio-8000-exec-10] o.s.w.s.adapter.HttpWebHandlerAdapter    : [40d156e1] Error [java.lang.IllegalStateException: Async operation timeout.] for HTTP GET "/cart/stream?userId=2001", but ServerHttpResponse already committed (200 OK)
+2025-07-10T22:15:56.301+05:30  INFO 98859 --- [RedisInstanceCleaner] redis.embedded.AbstractRedisInstance     : Redis exited
+2025-07-10T22:15:56.331+05:30  INFO 98859 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/127.0.0.1:6379
+2025-07-10T22:15:56.340+05:30  WARN 98859 --- [lettuce-epollEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: finishConnect(..) failed: Connection refused: localhost/127.0.0.1:6379

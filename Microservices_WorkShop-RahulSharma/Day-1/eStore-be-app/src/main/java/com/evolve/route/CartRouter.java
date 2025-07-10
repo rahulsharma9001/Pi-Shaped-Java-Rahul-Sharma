@@ -17,6 +17,7 @@ public class CartRouter {
                 .andRoute(RequestPredicates.GET("/carts/user/{userId}"), handler::getByUserId)
                 .andRoute(RequestPredicates.POST("/carts/user/{userId}"), handler::create)
                 .andRoute(RequestPredicates.PUT("/carts/{id}"), handler::update)
-                .andRoute(RequestPredicates.DELETE("/carts/{id}"), handler::delete);
+                .andRoute(RequestPredicates.DELETE("/carts/{id}"), handler::delete)
+                .andRoute(RequestPredicates.GET("cart/stream"), handler::streamCartUpdates);
     }
 }
