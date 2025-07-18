@@ -15,24 +15,24 @@ Day-3/
 └── spring-cloud-microservices/
 ├── README.md
 ├── eureka-server/
-│   ├── src/main/java/com/example/eurekaserver/EurekaServerApplication.java
+│   ├── src/main/java/com/evolve/eurekaserver/EurekaServerApplication.java
 │   ├── src/main/resources/application.yml
 │   ├── pom.xml
 │
 ├── user-service/
-│   ├── src/main/java/com/example/userservice/UserServiceApplication.java
-│   ├── src/main/java/com/example/userservice/controller/UserController.java
+│   ├── src/main/java/com/evolve/userservice/UserServiceApplication.java
+│   ├── src/main/java/com/evolve/userservice/controller/UserController.java
 │   ├── src/main/resources/application.yml
 │   ├── pom.xml
 │
 ├── order-service/
-│   ├── src/main/java/com/example/orderservice/OrderServiceApplication.java
-│   ├── src/main/java/com/example/orderservice/controller/OrderController.java
+│   ├── src/main/java/com/evolve/orderservice/OrderServiceApplication.java
+│   ├── src/main/java/com/evolve/orderservice/controller/OrderController.java
 │   ├── src/main/resources/application.yml
 │   ├── pom.xml
 │
 ├── api-gateway/
-│   ├── src/main/java/com/example/apigateway/ApiGatewayApplication.java
+│   ├── src/main/java/com/evolve/apigateway/ApiGatewayApplication.java
 │   ├── src/main/resources/application.yml
 │   ├── pom.xml
 │
