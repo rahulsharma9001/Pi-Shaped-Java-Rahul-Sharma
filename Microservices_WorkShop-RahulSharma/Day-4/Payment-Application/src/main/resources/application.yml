@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+resilience4j:
+  retry:
+    instances:
+      paymentService:
+        max-attempts: 3
+        wait-duration: 1s
+        retry-exceptions:
+          - java.lang.IllegalStateException
+
+  timelimiter:
+    instances:
+      paymentService:
+        timeout-duration: 2s
+
+  bulkhead:
+    instances:
+      paymentService:
+        max-concurrent-calls: 5
+        max-wait-duration: 0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
