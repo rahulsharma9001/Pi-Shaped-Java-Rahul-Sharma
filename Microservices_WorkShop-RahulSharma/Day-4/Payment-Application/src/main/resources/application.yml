@@ -21,6 +21,15 @@ resilience4j:
         max-concurrent-calls: 5
         max-wait-duration: 0
 
+  circuitbreaker:
+    instances:
+      paymentCircuitBreaker:
+        registerHealthIndicator: true
+        slidingWindowSize: 5
+        minimumNumberOfCalls: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+
 management:
   endpoints:
     web:
